@@ -1,0 +1,41 @@
+name: Paradise Lost Stop Sensitivity
+
+on:
+  push:
+    branches:
+      - analysis/paradise-lost
+    paths:
+      - 'analysis/paradise_lost_stop_sensitivity.py'
+      - '.github/workflows/paradise_lost_stop_sensitivity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  PYTHONUNBUFFERED: '1'
+
+jobs:
+  stop-sensitivity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip pandas numpy yfinance
+      - name: Rebuild Yahoo-clean source
+        run: python analysis/rebuild_yahoo_clean_sep18.py
+      - name: Run stop sensitivity
+        run: python analysis/paradise_lost_stop_sensitivity.py
+      - name: Show summary
+        run: cat analysis_outputs/paradise_lost_stop_sensitivity/summary.txt
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis_outputs/paradise_lost_stop_sensitivity/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Add Paradise Lost stop sensitivity outputs"
+          git push
