@@ -1,12 +1,11 @@
-name: Paradise Lost Historical High Fast
+name: Paradise Lost Definition Search
 
 on:
   push:
     branches:
       - analysis/paradise-lost
     paths:
-      - 'analysis/paradise_lost_historical_high_calibrate.py'
-      - 'analysis/paradise_lost_timing_probe.py'
+      - 'analysis/paradise_lost_definition_search.py'
       - '.github/workflows/paradise_lost_historical_high.yml'
   workflow_dispatch:
 
@@ -17,7 +16,7 @@ env:
   PYTHONUNBUFFERED: '1'
 
 jobs:
-  historical-high:
+  definition-search:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,15 +27,15 @@ jobs:
         run: python -m pip install --upgrade pip pandas numpy yfinance
       - name: Rebuild exact Yahoo-clean source
         run: python analysis/rebuild_yahoo_clean_sep18.py
-      - name: Timing probe
-        run: python analysis/paradise_lost_timing_probe.py
-      - name: Show timing summary
-        run: cat analysis_outputs/paradise_lost_timing_probe/summary.txt
+      - name: Search A+ definition variants
+        run: python analysis/paradise_lost_definition_search.py
+      - name: Show summary
+        run: cat analysis_outputs/paradise_lost_definition_search/summary.txt
       - name: Commit outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add analysis_outputs/paradise_lost_timing_probe/
+          git add analysis_outputs/paradise_lost_definition_search/
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Add Paradise Lost timing probe outputs"
+          git commit -m "Add Paradise Lost definition-search outputs"
           git push
