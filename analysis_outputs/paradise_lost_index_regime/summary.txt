@@ -1,0 +1,68 @@
+PARADISE LOST — NIKKEI225 INDEX MA REGIME
+Same A+ v2 signals. Index filter is evaluated on signal close; no future data.
+
+HIGH Q4+Q5
+    Scope          Period                  Rule  IDX_d25_mean  IDX_d50_mean  N  MeanR    PF  WinRate  StopRate  Hit1R  Hit2R
+HIGH_Q4Q5 TRAIN_2016_2020                   ALL           NaN           NaN 50 -0.352 0.542    0.220     0.760  0.320  0.220
+HIGH_Q4Q5 TRAIN_2016_2020           IDX_BELOW15           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 TRAIN_2016_2020           IDX_BELOW25           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 TRAIN_2016_2020           IDX_BELOW50           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 TRAIN_2016_2020        IDX_15_25_BEAR           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 TRAIN_2016_2020      IDX_5_15_25_BEAR           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 TRAIN_2016_2020    IDX_BELOW25_25DOWN           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 TRAIN_2016_2020    IDX_BELOW25_50DOWN           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 TRAIN_2016_2020 IDX_BELOW25_D25_LT_M2           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 TRAIN_2016_2020 IDX_BELOW25_D25_LT_M4           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 VALID_2021_2023                   ALL         1.433         4.472 37  0.683 2.203    0.432     0.568  0.622  0.432
+HIGH_Q4Q5 VALID_2021_2023           IDX_BELOW15         0.493         3.492 11 -0.327 0.551    0.273     0.727  0.273  0.182
+HIGH_Q4Q5 VALID_2021_2023           IDX_BELOW25        -1.102        -0.172  5  0.481 2.203    0.600     0.400  0.600  0.400
+HIGH_Q4Q5 VALID_2021_2023           IDX_BELOW50        -1.370        -1.355  4  0.851 4.405    0.750     0.250  0.750  0.500
+HIGH_Q4Q5 VALID_2021_2023        IDX_15_25_BEAR        -2.053        -1.655  2  1.702   inf    1.000     0.000  1.000  0.500
+HIGH_Q4Q5 VALID_2021_2023      IDX_5_15_25_BEAR        -2.053        -1.655  2  1.702   inf    1.000     0.000  1.000  0.500
+HIGH_Q4Q5 VALID_2021_2023    IDX_BELOW25_25DOWN        -1.100        -1.267  3  0.137 1.411    0.667     0.333  0.667  0.333
+HIGH_Q4Q5 VALID_2021_2023    IDX_BELOW25_50DOWN        -2.180        -1.618  1  2.995   inf    1.000     0.000  1.000  1.000
+HIGH_Q4Q5 VALID_2021_2023 IDX_BELOW25_D25_LT_M2        -2.180        -1.618  1  2.995   inf    1.000     0.000  1.000  1.000
+HIGH_Q4Q5 VALID_2021_2023 IDX_BELOW25_D25_LT_M4           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5  TEST_2024_2026                   ALL         1.760         3.821 50 -0.622 0.171    0.220     0.740  0.400  0.160
+HIGH_Q4Q5  TEST_2024_2026           IDX_BELOW15        -0.372         1.736 16 -0.653 0.157    0.188     0.750  0.312  0.125
+HIGH_Q4Q5  TEST_2024_2026           IDX_BELOW25        -1.693        -1.143 10 -0.277 0.538    0.400     0.600  0.500  0.300
+HIGH_Q4Q5  TEST_2024_2026           IDX_BELOW50        -1.806        -2.788  7 -0.084 0.853    0.429     0.571  0.571  0.286
+HIGH_Q4Q5  TEST_2024_2026        IDX_15_25_BEAR        -4.194        -4.547  3 -0.260 0.610    0.333     0.667  0.667  0.333
+HIGH_Q4Q5  TEST_2024_2026      IDX_5_15_25_BEAR        -4.478        -5.091  2  0.110 1.219    0.500     0.500  1.000  0.500
+HIGH_Q4Q5  TEST_2024_2026    IDX_BELOW25_25DOWN        -2.360        -2.572  7 -0.201 0.648    0.429     0.571  0.571  0.286
+HIGH_Q4Q5  TEST_2024_2026    IDX_BELOW25_50DOWN        -2.657        -3.738  4  0.112 1.224    0.500     0.500  0.750  0.500
+HIGH_Q4Q5  TEST_2024_2026 IDX_BELOW25_D25_LT_M2        -4.194        -4.547  3 -0.260 0.610    0.333     0.667  0.667  0.333
+HIGH_Q4Q5  TEST_2024_2026 IDX_BELOW25_D25_LT_M4        -5.002        -5.329  1  1.219   inf    1.000     0.000  1.000  1.000
+
+Q5 ONLY
+Scope          Period                  Rule  IDX_d25_mean  IDX_d50_mean  N  MeanR    PF  WinRate  StopRate  Hit1R  Hit2R
+   Q5 TRAIN_2016_2020                   ALL           NaN           NaN 24 -0.378 0.496    0.250     0.750  0.375  0.250
+   Q5 TRAIN_2016_2020           IDX_BELOW15           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 TRAIN_2016_2020           IDX_BELOW25           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 TRAIN_2016_2020           IDX_BELOW50           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 TRAIN_2016_2020        IDX_15_25_BEAR           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 TRAIN_2016_2020      IDX_5_15_25_BEAR           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 TRAIN_2016_2020    IDX_BELOW25_25DOWN           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 TRAIN_2016_2020    IDX_BELOW25_50DOWN           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 TRAIN_2016_2020 IDX_BELOW25_D25_LT_M2           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 TRAIN_2016_2020 IDX_BELOW25_D25_LT_M4           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5 VALID_2021_2023                   ALL         1.262         4.717 13  0.223 1.362    0.385     0.615  0.538  0.385
+   Q5 VALID_2021_2023           IDX_BELOW15         0.592         3.942  6 -0.334 0.599    0.167     0.833  0.167  0.167
+   Q5 VALID_2021_2023           IDX_BELOW25        -0.924         0.727  3  0.332 1.497    0.333     0.667  0.333  0.333
+   Q5 VALID_2021_2023           IDX_BELOW50        -1.372        -1.189  2  0.997 2.995    0.500     0.500  0.500  0.500
+   Q5 VALID_2021_2023        IDX_15_25_BEAR        -2.180        -1.618  1  2.995   inf    1.000     0.000  1.000  1.000
+   Q5 VALID_2021_2023      IDX_5_15_25_BEAR        -2.180        -1.618  1  2.995   inf    1.000     0.000  1.000  1.000
+   Q5 VALID_2021_2023    IDX_BELOW25_25DOWN        -0.564        -0.759  1 -1.000 0.000    0.000     1.000  0.000  0.000
+   Q5 VALID_2021_2023    IDX_BELOW25_50DOWN        -2.180        -1.618  1  2.995   inf    1.000     0.000  1.000  1.000
+   Q5 VALID_2021_2023 IDX_BELOW25_D25_LT_M2        -2.180        -1.618  1  2.995   inf    1.000     0.000  1.000  1.000
+   Q5 VALID_2021_2023 IDX_BELOW25_D25_LT_M4           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+   Q5  TEST_2024_2026                   ALL         1.521         3.943 32 -0.683 0.139    0.188     0.781  0.406  0.156
+   Q5  TEST_2024_2026           IDX_BELOW15         0.041         2.418 11 -0.801 0.062    0.091     0.818  0.273  0.091
+   Q5  TEST_2024_2026           IDX_BELOW25        -1.986        -1.069  4 -0.592 0.211    0.250     0.750  0.500  0.250
+   Q5  TEST_2024_2026           IDX_BELOW50        -2.300        -2.843  3 -0.346 0.482    0.333     0.667  0.667  0.000
+   Q5  TEST_2024_2026        IDX_15_25_BEAR        -3.790        -4.157  2 -1.000 0.000    0.000     1.000  0.500  0.000
+   Q5  TEST_2024_2026      IDX_5_15_25_BEAR        -3.955        -4.853  1 -1.000 0.000    0.000     1.000  1.000  0.000
+   Q5  TEST_2024_2026    IDX_BELOW25_25DOWN        -3.790        -4.157  2 -1.000 0.000    0.000     1.000  0.500  0.000
+   Q5  TEST_2024_2026    IDX_BELOW25_50DOWN        -3.955        -4.853  1 -1.000 0.000    0.000     1.000  1.000  0.000
+   Q5  TEST_2024_2026 IDX_BELOW25_D25_LT_M2        -3.790        -4.157  2 -1.000 0.000    0.000     1.000  0.500  0.000
+   Q5  TEST_2024_2026 IDX_BELOW25_D25_LT_M4           NaN           NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
