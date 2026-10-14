@@ -10,6 +10,8 @@ SRC=ROOT/'runtime/nikkei225_yahoo_clean_2016_present.csv'
 OUT=ROOT/'analysis_outputs/paradise_lost_historical_high'
 OUT.mkdir(parents=True,exist_ok=True)
 T_CUR=np.array([55,171,62,7]); T_P50=np.array([59,110,96,30]); T_P100=np.array([114,93,42,46])
+LOOKBACKS=(1,2,3,5,7,10,15,20,30,40,60)
+PCTS=(0.0,0.0025,0.005,0.0075,0.01,0.015,0.02,0.03,0.04,0.05,0.075,0.10,0.15)
 
 def bc(s):
  a=s.to_numpy(float); return np.array([np.sum(a<0),np.sum((a>=0)&(a<5)),np.sum((a>=5)&(a<10)),np.sum(a>=10)])
@@ -29,6 +31,11 @@ def prep(g):
  d['p50e']=d.dev50.shift(1).rolling(20,min_periods=1).max(); d['p100e']=d.dev100.shift(1).rolling(20,min_periods=1).max()
  h60=d.High.rolling(60,min_periods=60).max(); c60=d.Close.rolling(60,min_periods=60).max()
  d['high_ratio60']=d.High/h60; d['close_ratio60']=d.Close/c60
+ for src in ('high_ratio60','close_ratio60'):
+  for inc in (1,0):
+   z=d[src].shift(0 if inc else 1)
+   for L in LOOKBACKS:
+    d[f'{src}_hist_{inc}_{L}']=z.rolling(L,min_periods=1).max()
  body=d.Open-d.Close; pos=(d.Close-d.Low)/(d.High-d.Low).replace(0,np.nan)
  common=(d.Open>d.Close)&(body>=.8*d.ATR20)&(pos<=.30)&(d.Close<d.MA15)
  d['base_cross']=common&(d.Close.shift(1)>=d.MA15.shift(1))
@@ -54,28 +61,23 @@ def main():
  rows=[]
  for bm in ['base_cross','base2','base3','base5','base10','base15','base20']:
   b=allrows[allrows[bm]].copy()
-  for src in ['high_ratio60','close_ratio60']:
-   for include_signal in [True,False]:
-    x=b[src] if include_signal else b[src].where(False)  # placeholder; rolling recomputed below from allrows slices
-    # compute historical-zone feature within ticker on full timeline, then select base rows
-    for L in (1,2,3,5,7,10,15,20,30,40,60):
-     for pct in (0.0,0.0025,0.005,0.0075,0.01,0.015,0.02,0.03,0.04,0.05,0.075,0.10,0.15):
-      # threshold means price was >= (1-pct)*60d high sometime in lookback
-      mask_parts=[]
-      for ticker,g in allrows.groupby('Ticker',sort=False):
-       z=g[src].shift(0 if include_signal else 1).rolling(L,min_periods=1).max() >= (1-pct)
-       mask_parts.append(pd.Series(z.to_numpy(),index=g.index))
-      hist=pd.concat(mask_parts).sort_index()
-      e=b[hist.loc[b.index].to_numpy()]
+  for src in ('high_ratio60','close_ratio60'):
+   for inc in (1,0):
+    for L in LOOKBACKS:
+     hist=b[f'{src}_hist_{inc}_{L}']
+     for pct in PCTS:
+      e=b[hist >= (1-pct)]
       if not 200<=len(e)<=420: continue
       total,ns,cs,ps,cur,p50,p100,pm=score(e)
-      rows.append([bm,src,include_signal,L,pct,len(e),cur,p50,p100,ns,cs,ps,total,pm])
+      rows.append([bm,src,bool(inc),L,pct,len(e),cur,p50,p100,ns,cs,ps,total,pm])
  r=pd.DataFrame(rows,columns=['base','zone_source','include_signal','lookback','zone_pct','N','current50','peak50','peak100','score_N','score_current','score_peak','score_total','peak_mode'])
  r=r.sort_values(['score_total','score_N','score_current','score_peak','N'],kind='stable').reset_index(drop=True)
  r.to_csv(OUT/'candidates.csv',index=False); r.head(200).to_csv(OUT/'top200.csv',index=False)
+ exact=r[r.N==295]
  with (OUT/'summary.txt').open('w',encoding='utf-8') as f:
-  f.write('TARGET N=295 current50=55/171/62/7 peak50=59/110/96/30 peak100=114/93/42/46\n\n')
-  f.write(r.head(80).to_string(index=False)); f.write('\n')
+  f.write('TARGET N=295 current50=55/171/62/7 peak50=59/110/96/30 peak100=114/93/42/46\n')
+  f.write(f'candidates={len(r)} exactN={len(exact)}\n\nTOP80\n')
+  f.write(r.head(80).to_string(index=False)); f.write('\n\nEXACT N295 TOP40\n'); f.write(exact.head(40).to_string(index=False)); f.write('\n')
  print((OUT/'summary.txt').read_text(encoding='utf-8'))
 
 if __name__=='__main__': main()
