@@ -32,7 +32,7 @@ jobs:
         run: python -m pip install --upgrade pip pandas numpy
 
       - name: Refresh fixed-constituent price histories
-        run: python scripts/update_nikkei225_prices.py --repo-root . --price-provider yahoo --retries 5 --sleep-seconds 0.8 --rate-limit-cooldown-seconds 90 --rate-limit-max-retries 1
+        run: python scripts/update_nikkei225_prices.py --repo-root . --price-provider yahoo --retries 5 --sleep-seconds 0.08 --rate-limit-cooldown-seconds 90 --rate-limit-max-retries 1
 
       - name: Run base calibration through 2026-09-22
         run: |
