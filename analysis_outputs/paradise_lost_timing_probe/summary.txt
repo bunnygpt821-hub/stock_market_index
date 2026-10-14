@@ -1,0 +1,43 @@
+TARGET current50=55/171/62/7 peak50=59/110/96/30 peak100=114/93/42/46
+
+                 candidate   N          current_timing peak_mode    current50       peak50      peak100  score_current  score_peak  score_total
+ cross_prevclose_h60e_0p60 292  dev50_entryopen_nextMA       exc  51/167/68/6 36/136/93/27 114/71/59/46             15          94          244
+ cross_prevclose_h60e_0p60 292  dev50_entryopen_nextMA       inc  51/167/68/6 37/138/91/26 114/71/59/46             15          98          248
+ cross_prevclose_h60e_0p60 292   dev50_entryopen_sigMA       exc  48/164/73/7 36/136/93/27 114/71/59/46             25          94          344
+ cross_prevclose_h60e_0p60 292   dev50_entryopen_sigMA       inc  48/164/73/7 37/138/91/26 114/71/59/46             25          98          348
+above3_prevclose_h60e_0p70 298               dev50_sig       inc  43/172/76/7 32/137/99/30 109/77/58/52             27         100          370
+above3_prevclose_h60e_0p70 298               dev50_sig       exc  43/172/76/7 31/137/99/31 109/77/58/52             27         102          372
+ cross_prevclose_h60e_0p60 292               dev50_sig       exc  38/182/65/7 36/136/93/27 114/71/59/46             31          94          404
+ cross_prevclose_h60e_0p60 292               dev50_sig       inc  38/182/65/7 37/138/91/26 114/71/59/46             31          98          408
+above3_prevclose_h60e_0p70 298  dev50_entryopen_nextMA       inc  56/158/78/6 32/137/99/30 109/77/58/52             31         100          410
+above3_prevclose_h60e_0p70 298  dev50_entryopen_nextMA       exc  56/158/78/6 31/137/99/31 109/77/58/52             31         102          412
+ cross_prevclose_h60e_0p60 292 dev50_entryclose_nextMA       exc  65/150/68/9 36/136/93/27 114/71/59/46             39          94          484
+ cross_prevclose_h60e_0p60 292 dev50_entryclose_nextMA       inc  65/150/68/9 37/138/91/26 114/71/59/46             39          98          488
+above3_prevclose_h60e_0p70 298   dev50_entryopen_sigMA       inc  53/154/83/8 32/137/99/30 109/77/58/52             41         100          510
+above3_prevclose_h60e_0p70 298   dev50_entryopen_sigMA       exc  53/154/83/8 31/137/99/31 109/77/58/52             41         102          512
+     above2_high_h60e_0p45 292               dev50_sig       exc 30/173/76/13 36/123/95/38 107/63/57/56             47         107          577
+     above2_high_h60e_0p45 292               dev50_sig       inc 30/173/76/13 36/126/93/37 107/64/58/54             47         109          579
+N295_above2_high_h60i_0p45 295               dev50_sig       exc 31/175/76/13 36/126/95/38 110/63/57/56             48         107          587
+N295_above2_high_h60i_0p45 295               dev50_sig       inc 31/175/76/13 36/129/93/37 110/64/58/54             48         109          589
+above3_prevclose_h60e_0p70 298 dev50_entryclose_nextMA       inc  70/139/80/9 32/137/99/30 109/77/58/52             67         100          770
+above3_prevclose_h60e_0p70 298 dev50_entryclose_nextMA       exc  70/139/80/9 31/137/99/31 109/77/58/52             67         102          772
+N295_above2_high_h60i_0p45 295  dev50_entryopen_nextMA       exc 46/140/90/19 36/126/95/38 110/63/57/56             80         107          907
+N295_above2_high_h60i_0p45 295 dev50_entryclose_nextMA       exc 51/135/77/32 36/126/95/38 110/63/57/56             80         107          907
+N295_above2_high_h60i_0p45 295  dev50_entryopen_nextMA       inc 46/140/90/19 36/129/93/37 110/64/58/54             80         109          909
+N295_above2_high_h60i_0p45 295 dev50_entryclose_nextMA       inc 51/135/77/32 36/129/93/37 110/64/58/54             80         109          909
+     above2_high_h60e_0p45 292 dev50_entryclose_nextMA       exc 50/134/76/32 36/123/95/38 107/63/57/56             81         107          917
+     above2_high_h60e_0p45 292 dev50_entryclose_nextMA       inc 50/134/76/32 36/126/93/37 107/64/58/54             81         109          919
+     above2_high_h60e_0p45 292  dev50_entryopen_nextMA       exc 45/138/90/19 36/123/95/38 107/63/57/56             83         107          937
+     above2_high_h60e_0p45 292  dev50_entryopen_nextMA       inc 45/138/90/19 36/126/93/37 107/64/58/54             83         109          939
+N295_above2_high_h60i_0p45 295   dev50_entryopen_sigMA       exc 44/136/92/23 36/126/95/38 110/63/57/56             92         107         1027
+N295_above2_high_h60i_0p45 295   dev50_entryopen_sigMA       inc 44/136/92/23 36/129/93/37 110/64/58/54             92         109         1029
+     above2_high_h60e_0p45 292   dev50_entryopen_sigMA       exc 43/134/92/23 36/123/95/38 107/63/57/56             95         107         1057
+     above2_high_h60e_0p45 292   dev50_entryopen_sigMA       inc 43/134/92/23 36/126/93/37 107/64/58/54             95         109         1059
+     above2_high_h60e_0p45 292              dev50_prev       exc  0/74/154/64 36/123/95/38 107/63/57/56            301         107         3117
+     above2_high_h60e_0p45 292              dev50_prev       inc  0/74/154/64 36/126/93/37 107/64/58/54            301         109         3119
+N295_above2_high_h60i_0p45 295              dev50_prev       exc  0/74/157/64 36/126/95/38 110/63/57/56            304         107         3147
+N295_above2_high_h60i_0p45 295              dev50_prev       inc  0/74/157/64 36/129/93/37 110/64/58/54            304         109         3149
+ cross_prevclose_h60e_0p60 292              dev50_prev       exc  0/61/158/73 36/136/93/27 114/71/59/46            327          94         3364
+ cross_prevclose_h60e_0p60 292              dev50_prev       inc  0/61/158/73 37/138/91/26 114/71/59/46            327          98         3368
+above3_prevclose_h60e_0p70 298              dev50_prev       inc  0/52/168/78 32/137/99/30 109/77/58/52            351         100         3610
+above3_prevclose_h60e_0p70 298              dev50_prev       exc  0/52/168/78 31/137/99/31 109/77/58/52            351         102         3612
