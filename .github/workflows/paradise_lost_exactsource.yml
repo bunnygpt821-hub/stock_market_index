@@ -7,6 +7,7 @@ on:
     paths:
       - 'analysis/rebuild_yahoo_clean_sep18.py'
       - 'analysis/paradise_lost_exactsource_calibrate.py'
+      - 'analysis/paradise_lost_historical_high_calibrate.py'
       - '.github/workflows/paradise_lost_exactsource.yml'
   workflow_dispatch:
 
@@ -34,20 +35,27 @@ jobs:
       - name: Rebuild original Yahoo-clean source through 2026-09-18
         run: python analysis/rebuild_yahoo_clean_sep18.py
 
-      - name: Calibrate A+ fingerprint on exact source
+      - name: Calibrate immediate high-zone definitions
         run: python analysis/paradise_lost_exactsource_calibrate.py
 
-      - name: Show result
-        run: cat analysis_outputs/paradise_lost_exactsource/summary.txt
+      - name: Calibrate historical high-zone definitions
+        run: python analysis/paradise_lost_historical_high_calibrate.py
+
+      - name: Show results
+        run: |
+          echo '=== IMMEDIATE ==='
+          cat analysis_outputs/paradise_lost_exactsource/summary.txt
+          echo '=== HISTORICAL HIGH ==='
+          cat analysis_outputs/paradise_lost_historical_high/summary.txt
 
       - name: Commit summary outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add analysis_outputs/paradise_lost_exactsource/
+          git add analysis_outputs/paradise_lost_exactsource/ analysis_outputs/paradise_lost_historical_high/
           if git diff --cached --quiet; then
             echo "No output changes."
             exit 0
           fi
-          git commit -m "Add Paradise Lost exact-source calibration outputs"
+          git commit -m "Update Paradise Lost high-zone calibration outputs"
           git push
