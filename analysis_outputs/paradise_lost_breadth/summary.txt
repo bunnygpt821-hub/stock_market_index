@@ -1,0 +1,58 @@
+PARADISE LOST — BREADTH LEVEL x 5D CHANGE
+Breadth is built point-in-time from the same current-Nikkei225 historical price panel; therefore survivorship bias remains. Use as internal regime test, not a universal market claim.
+
+NAMED STATES — HIGH MOUNTAIN Q4+Q5
+    Scope          Period              Rule  BreadthMean  Breadth_d5  N  MeanR    PF  WinRate  StopRate  Hit1R  Hit2R
+HIGH_Q4Q5 TRAIN_2016_2020     HIGH_ROLLOVER       73.012     -15.315  4 -1.000 0.000    0.000     1.000  0.000  0.000
+HIGH_Q4Q5 TRAIN_2016_2020      MID_ROLLOVER       57.964     -28.734  4 -1.000 0.000    0.000     1.000  0.250  0.000
+HIGH_Q4Q5 TRAIN_2016_2020       LOW_FALLING       25.309     -31.198 17 -0.383 0.515    0.176     0.765  0.353  0.235
+HIGH_Q4Q5 TRAIN_2016_2020    HIGH_STABLE_UP       80.032      10.136 16 -0.486 0.351    0.250     0.750  0.250  0.188
+HIGH_Q4Q5 TRAIN_2016_2020       FAST_DAMAGE       40.174     -43.439 14 -0.725 0.219    0.071     0.929  0.143  0.071
+HIGH_Q4Q5 TRAIN_2016_2020         B25_BREAK       37.041     -42.251 13 -0.704 0.237    0.077     0.923  0.077  0.077
+HIGH_Q4Q5 TRAIN_2016_2020 B25_HIGH_ROLLOVER       68.614     -12.918  2 -1.000 0.000    0.000     1.000  0.000  0.000
+HIGH_Q4Q5 VALID_2021_2023     HIGH_ROLLOVER       64.775     -16.685  5 -0.718 0.102    0.200     0.800  0.600  0.200
+HIGH_Q4Q5 VALID_2021_2023      MID_ROLLOVER       51.271     -23.916  1  2.995   inf    1.000     0.000  1.000  1.000
+HIGH_Q4Q5 VALID_2021_2023       LOW_FALLING       14.983     -23.597  2 -1.000 0.000    0.000     1.000  0.500  0.000
+HIGH_Q4Q5 VALID_2021_2023    HIGH_STABLE_UP       75.287       6.985 12  1.725 6.175    0.667     0.333  0.833  0.583
+HIGH_Q4Q5 VALID_2021_2023       FAST_DAMAGE       35.630     -23.420  4  0.351 1.702    0.500     0.500  0.750  0.250
+HIGH_Q4Q5 VALID_2021_2023         B25_BREAK       46.001     -20.513  6 -0.099 0.851    0.333     0.667  0.667  0.333
+HIGH_Q4Q5 VALID_2021_2023 B25_HIGH_ROLLOVER       69.345     -10.068  2 -1.000 0.000    0.000     1.000  0.000  0.000
+HIGH_Q4Q5  TEST_2024_2026     HIGH_ROLLOVER       67.163     -13.492  3 -0.269 0.420    0.333     0.333  1.000  0.333
+HIGH_Q4Q5  TEST_2024_2026      MID_ROLLOVER       44.694     -25.411  1 -1.000 0.000    0.000     1.000  1.000  0.000
+HIGH_Q4Q5  TEST_2024_2026       LOW_FALLING          NaN         NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5  TEST_2024_2026    HIGH_STABLE_UP       72.755       9.526 11 -0.710 0.035    0.182     0.727  0.364  0.182
+HIGH_Q4Q5  TEST_2024_2026       FAST_DAMAGE       44.694     -25.411  1 -1.000 0.000    0.000     1.000  1.000  0.000
+HIGH_Q4Q5  TEST_2024_2026         B25_BREAK       59.829      -9.880  7 -1.000 0.000    0.000     1.000  0.143  0.000
+HIGH_Q4Q5  TEST_2024_2026 B25_HIGH_ROLLOVER       74.405      -9.226  2 -1.000 0.000    0.000     1.000  0.000  0.000
+
+2024-26 MATRIX — HIGH Q4Q5 / BreadthMean x 5d change
+    Scope       Level         Change         Period LQ CQ  LevelMean  ChangeMean  N  MeanR    PF  WinRate  StopRate  Hit1R  Hit2R
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q1 Q1        NaN         NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q1 Q2        NaN         NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q1 Q3        NaN         NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q1 Q4        NaN         NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q2 Q1     44.694     -25.411  1 -1.000 0.000    0.000     1.000  1.000  0.000
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q2 Q2     51.602      -7.270  3  0.483 2.448    0.667     0.333  0.667  0.667
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q2 Q3     53.886      -1.261  6 -0.452 0.322    0.333     0.667  0.500  0.333
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q2 Q4     55.346       6.857  3 -0.346 0.482    0.333     0.667  0.667  0.000
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q3 Q1        NaN         NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q3 Q2     67.662      -8.615 14 -0.843 0.047    0.071     0.857  0.286  0.071
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q3 Q3     70.074      -0.260  8 -0.717 0.044    0.250     0.750  0.500  0.125
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q3 Q4     70.747      13.799  4 -0.709 0.055    0.250     0.750  0.250  0.000
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q4 Q1        NaN         NaN  0    NaN   NaN      NaN       NaN    NaN    NaN
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q4 Q2     76.637      -8.234  3 -1.000 0.000    0.000     1.000  0.000  0.000
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q4 Q3     79.102      -2.771  5 -0.462 0.230    0.400     0.600  0.400  0.200
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 TEST_2024_2026 Q4 Q4     77.399      14.149  3 -0.697 0.000    0.000     0.667  0.333  0.333
+
+2016-20 TRAIN EDGES
+    Scope       Level         Change   Type  Boundary   Value
+HIGH_Q4Q5 BreadthMean BreadthMean_d5  LEVEL         0   6.932
+HIGH_Q4Q5 BreadthMean BreadthMean_d5  LEVEL         1  33.464
+HIGH_Q4Q5 BreadthMean BreadthMean_d5  LEVEL         2  59.491
+HIGH_Q4Q5 BreadthMean BreadthMean_d5  LEVEL         3  74.735
+HIGH_Q4Q5 BreadthMean BreadthMean_d5  LEVEL         4  94.037
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 CHANGE         0 -51.046
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 CHANGE         1 -25.405
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 CHANGE         2  -5.297
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 CHANGE         3   4.783
+HIGH_Q4Q5 BreadthMean BreadthMean_d5 CHANGE         4  28.333
