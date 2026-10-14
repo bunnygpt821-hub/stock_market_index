@@ -1,0 +1,42 @@
+codes_loaded=225 missing=0 missing_codes=
+base_cross_count=9644
+target_current50=55/171/62/7
+target_peak50=59/110/96/30
+target_peak100=114/93/42/46
+
+BEST
+base                       base_above3
+metric              prevclose_h60e_pct
+threshold                        0.007
+threshold_unit                fraction
+N                                  283
+current50_counts           43/164/68/8
+peak50_counts             32/129/92/30
+peak100_counts            108/73/51/51
+score_current                       26
+score_peak                          90
+score_total                        350
+peak_mode               include_signal
+
+TOP20
+       base             metric  threshold threshold_unit   N current50_counts peak50_counts peak100_counts  score_current  score_peak  score_total      peak_mode
+base_above3 prevclose_h60e_pct      0.007       fraction 283      43/164/68/8  32/129/92/30   108/73/51/51             26          90          350 include_signal
+ base_cross prevclose_h60e_pct      0.006       fraction 283      39/178/59/7  39/130/88/26   119/66/54/44             26          98          358 exclude_signal
+base_above2 prevclose_h60e_pct      0.006       fraction 267      39/164/58/6  36/120/87/24   112/61/52/42             28          96          376 exclude_signal
+ base_cross      high_h60i_pct      0.004       fraction 293     35/174/71/13  36/130/88/39   118/71/49/55             38         102          482 exclude_signal
+ base_cross      high_h60e_pct      0.004       fraction 292     34/174/71/13  36/129/88/39   117/71/49/55             39         100          490 exclude_signal
+base_above3      high_h60i_pct      0.006       fraction 295     35/170/78/12  36/125/99/35   119/71/56/49             42          90          510 include_signal
+ base_cross      open_h60e_pct      0.007       fraction 266      24/166/69/7  37/123/79/27   113/67/45/41             43          90          520 exclude_signal
+base_above3      open_h60e_pct      0.009       fraction 270      24/168/69/9  38/122/83/27   109/70/50/41             43          90          520 exclude_signal
+base_above3      high_h60e_pct      0.006       fraction 292     34/168/78/12  35/123/99/35   116/71/56/49             45          86          536 include_signal
+base_above2      high_h60e_pct      0.005       fraction 298     34/174/78/12  38/124/99/37   117/72/57/52             45          90          540 include_signal
+base_above2      high_h60i_pct      0.005       fraction 300     35/175/78/12  38/126/99/37   119/72/57/52             45          94          544 include_signal
+base_above2      open_h60e_pct      0.008       fraction 273      23/169/73/8  36/126/83/28   114/67/48/44             46          88          548 exclude_signal
+base_above2      high_h60i_pct      0.004       fraction 261     31/155/64/11  33/111/83/34   107/59/47/48             46          92          552 exclude_signal
+base_above2      high_h60e_pct      0.004       fraction 260     30/155/64/11  33/110/83/34   106/59/47/48             47          92          562 exclude_signal
+base_above2 prevclose_h60e_pct      0.007       fraction 326      48/196/74/8 43/152/100/31   133/83/57/53             45         114          564 include_signal
+base_above5 prevclose_h60e_pct      0.008       fraction 264     26/160/68/10  30/115/88/31   110/64/43/47             49          78          568 exclude_signal
+base_above2 prevclose_h60e_atr      0.350            ATR 323     48/172/85/18 29/132/108/54   114/73/65/71             42         156          576 include_signal
+base_above5      high_h60i_pct      0.007       fraction 275     23/168/70/14  32/119/92/32   113/65/51/46             50          80          580 exclude_signal
+ base_cross      high_h60i_pct      0.003       fraction 252     32/149/60/11  32/110/79/31   101/61/42/48             51          92          602 exclude_signal
+base_above5      high_h60e_pct      0.007       fraction 272     22/166/70/14  31/117/92/32   110/65/51/46             53          82          612 exclude_signal
