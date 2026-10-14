@@ -39,3 +39,4 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Add first-squeeze analysis outputs"
           git push
+# trigger: first-squeeze-v1
