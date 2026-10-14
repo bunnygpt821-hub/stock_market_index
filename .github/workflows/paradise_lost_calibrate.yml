@@ -31,11 +31,32 @@ jobs:
       - name: Install analysis dependencies
         run: python -m pip install --upgrade pip pandas numpy
 
-      - name: Run base calibration
-        run: python analysis/paradise_lost_calibrate.py
+      - name: Refresh fixed-constituent price histories
+        run: python scripts/update_nikkei225_prices.py --repo-root . --price-provider yahoo --retries 5 --sleep-seconds 0.8 --rate-limit-cooldown-seconds 90 --rate-limit-max-retries 1
 
-      - name: Run dedup calibration
-        run: python analysis/paradise_lost_calibrate_dedup.py
+      - name: Run base calibration through 2026-09-22
+        run: |
+          python - <<'PY'
+          import sys
+          import pandas as pd
+          sys.path.insert(0, 'analysis')
+          import paradise_lost_calibrate as m
+          m.END = pd.Timestamp('2026-09-22')
+          m.main()
+          PY
+
+      - name: Run dedup calibration through 2026-09-22
+        run: |
+          python - <<'PY'
+          import sys
+          import pandas as pd
+          sys.path.insert(0, 'analysis')
+          import paradise_lost_calibrate as base
+          base.END = pd.Timestamp('2026-09-22')
+          import paradise_lost_calibrate_dedup as d
+          d.base.END = pd.Timestamp('2026-09-22')
+          d.main()
+          PY
 
       - name: Show summaries
         run: |
@@ -53,5 +74,5 @@ jobs:
             echo "No output changes."
             exit 0
           fi
-          git commit -m "Update Paradise Lost calibration outputs"
+          git commit -m "Update Paradise Lost calibration outputs through 2026-09-22"
           git push
