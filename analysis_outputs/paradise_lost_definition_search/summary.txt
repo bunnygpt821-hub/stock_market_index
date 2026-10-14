@@ -1,0 +1,110 @@
+TARGET N=295 current50=55/171/62/7 peak50=59/110/96/30 peak100=114/93/42/46
+candidates=420 exactN=2
+
+TOP100
+   atr_ref         break_rule        high_metric op  threshold   N     current50        peak50      peak100  score_N  score_current  score_peak  score_total
+ATR20_prev   br_low_prevclose  prox_prevclose_hi le     0.0050 296  30/172/79/15  32/137/94/33 116/66/55/57        1             51         112          907
+     ATR20   br_low_prevclose  prox_prevclose_hi le     0.0050 291  29/169/78/15  32/134/93/32 114/65/53/57        4             52         106         1006
+ATR20_prev br_close_prevclose dist_high_atr_prev le     0.2000 295  33/164/77/21  28/124/95/48  95/67/57/67        0             58         145         1015
+     ATR20 br_close_prevclose dist_high_atr_prev le     0.2000 294  33/163/77/21  28/123/95/48  94/67/57/67        1             59         145         1060
+     ATR20   br_close_prevlow dist_high_atr_prev le     0.3000 302  35/169/80/18  29/129/98/46 100/67/64/60        7             51         143         1118
+ATR20_prev   br_close_prevlow dist_high_atr_prev le     0.3000 302  35/169/80/18  29/129/98/46 100/67/64/60        7             51         143         1118
+ATR20_prev      br_low_above3  prox_prevclose_hi le     0.0075 290  27/162/85/16  25/137/92/36 108/69/52/59        5             69         124         1309
+ATR20_prev    br_close_above2  dist_high_atr_sig le     0.2000 283  32/160/73/18  28/118/94/43  96/59/57/61       12             56         136         1336
+     ATR20      br_low_above3  prox_prevclose_hi le     0.0075 288  27/162/83/16  25/135/92/36 107/69/52/58        7             67         122         1337
+     ATR20    br_close_above2  dist_high_atr_sig le     0.2000 282  32/159/73/18  27/118/94/43  95/59/57/61       13             57         138         1383
+     ATR20        br_intraday       range_high_i ge     0.9800 304  36/163/81/24  24/127/96/57  92/70/57/77        9             63         170         1385
+ATR20_prev br_close_prevclose       range_high_i ge     0.9800 289  32/156/78/23  24/117/94/54  88/65/55/73        6             70         162         1392
+ATR20_prev        br_intraday       range_high_i ge     0.9800 305  36/164/81/24  24/128/96/57  93/70/57/77       10             62         170         1400
+     ATR20 br_close_prevclose       range_high_i ge     0.9800 288  32/155/78/23  24/116/94/54  87/65/55/73        7             71         162         1437
+     ATR20 br_close_prevclose  dist_high_atr_sig le     0.2000 311  36/175/79/21 29/134/100/48 104/70/59/68       16             54         148         1438
+     ATR20        br_intraday dist_high_atr_prev le     0.2000 312  37/172/81/22  28/135/97/52 100/72/59/72       17             53         157         1462
+     ATR20      br_low_above2       prox_high_hi le     0.0050 305  25/173/80/27  32/128/98/47 108/61/56/64       10             70         134         1484
+ATR20_prev        br_intraday dist_high_atr_prev le     0.2000 313  37/173/81/22  28/136/97/52 101/72/59/72       18             54         157         1507
+ATR20_prev br_close_prevclose  dist_high_atr_sig le     0.2000 313  36/177/79/21 30/135/100/48 106/70/59/68       18             56         146         1526
+     ATR20   br_close_prevlow  dist_high_atr_sig le     0.3000 316  39/177/82/18 28/139/103/46 107/72/65/61       21             53         149         1574
+ATR20_prev   br_close_prevlow  dist_high_atr_sig le     0.3000 316  39/177/82/18 28/139/103/46 107/72/65/61       21             53         149         1574
+ATR20_prev     br_low_prevlow  prox_prevclose_hi le     0.0050 273  28/160/72/13  31/127/86/29 110/60/51/50       22             54         106         1576
+     ATR20   br_close_prevlow       range_high_i ge     0.9700 281  29/155/78/19  22/116/93/50  86/59/61/66       14             70         167         1637
+ATR20_prev   br_close_prevlow       range_high_i ge     0.9700 281  29/155/78/19  22/116/93/50  86/59/61/66       14             70         167         1637
+     ATR20    br_close_above3 dist_high_atr_prev le     0.3000 310  33/166/90/21 28/122/108/52  97/71/65/65       15             69         158         1643
+ATR20_prev    br_close_above3 dist_high_atr_prev le     0.3000 312  33/168/90/21 29/122/109/52  99/71/65/65       17             67         156         1671
+ATR20_prev      br_low_above2       prox_high_hi le     0.0050 309  25/173/82/29  32/129/99/49 108/61/58/66       14             74         142         1672
+     ATR20   br_close_prevlow       prox_high_hi le     0.0050 266  28/160/67/11  28/118/87/33  94/59/56/48       29             47         121         1696
+ATR20_prev   br_close_prevlow       prox_high_hi le     0.0050 266  28/160/67/11  28/118/87/33  94/59/56/48       29             47         121         1696
+     ATR20    br_close_above2       prox_high_hi le     0.0050 316  33/187/82/14 37/135/104/40 114/72/63/58       21             65         119         1724
+     ATR20     br_low_prevlow  prox_prevclose_hi le     0.0050 269  27/158/71/13  31/124/86/28 108/59/50/50       26             56         106         1726
+     ATR20    br_close_above3  prox_prevclose_hi le     0.0075 323   43/188/84/8 35/147/109/32 121/82/62/55       28             52         123         1743
+ATR20_prev    br_close_above3       prox_high_hi le     0.0050 269  28/156/72/13  30/111/94/34  92/62/58/48       26             58         107         1757
+     ATR20      br_low_above5  prox_prevclose_hi le     0.0100 311  26/170/91/24  26/150/93/42 128/75/47/60       16             76         139         1759
+ATR20_prev     br_low_prevlow       prox_high_hi le     0.0025 285  23/154/82/26  34/117/86/48 103/51/55/64       10             88         144         1764
+ATR20_prev    br_close_above2       prox_high_hi le     0.0050 317  33/188/82/14 38/135/104/40 115/72/63/58       22             66         119         1769
+     ATR20    br_close_above3       prox_high_hi le     0.0050 268  28/155/72/13  29/111/94/34  91/62/58/48       27             59         109         1804
+     ATR20    br_close_above5       prox_high_hi le     0.0075 312  24/192/80/16 34/143/100/35 121/73/59/49       17             79         114         1809
+     ATR20     br_low_prevlow       prox_high_hi le     0.0025 281  23/153/81/24  34/115/86/46 103/50/54/62       14             86         138         1848
+ATR20_prev    br_close_above3       range_high_i ge     0.9700 282  27/150/83/22 19/107/104/52  80/60/62/70       13             85         184         1849
+ATR20_prev    br_close_above5       prox_high_hi le     0.0075 313  24/193/80/16 35/142/101/35 123/72/59/49       18             80         116         1856
+     ATR20      br_low_above3  dist_high_atr_sig le     0.3000 294  22/148/90/34  21/120/97/56  96/57/51/71        1            111         163         1858
+ATR20_prev    br_close_above5  prox_prevclose_hi le     0.0075 263   25/158/72/8  25/122/87/29 103/65/46/46       32             54          99         1869
+     ATR20    br_close_above3       range_high_i ge     0.9700 280  27/149/82/22 19/107/103/51  79/60/62/69       15             85         182         1907
+ATR20_prev    br_close_above2      prox_close_hi le     0.0300 292    6/220/66/0  89/141/50/12 169/74/33/16        3            109         238         1963
+ATR20_prev    br_close_above3  prox_prevclose_hi le     0.0075 329   45/190/86/8 35/151/110/33 124/83/63/56       34             54         133         1963
+     ATR20    br_close_above2      prox_close_hi le     0.0300 291    6/219/66/0  86/143/50/12 167/75/33/16        4            108         234         1974
+ATR20_prev      br_low_above5  prox_prevclose_hi le     0.0100 317  26/172/95/24  26/154/94/43 129/77/48/62       22             80         145         2005
+     ATR20    br_close_above2 dist_high_atr_prev le     0.2000 267  29/149/71/18  26/109/89/43  86/57/55/60       28             68         145         2005
+ATR20_prev    br_close_above2 dist_high_atr_prev le     0.2000 267  29/149/71/18  26/109/89/43  86/57/55/60       28             68         145         2005
+     ATR20    br_close_above3  dist_high_atr_sig le     0.3000 324  37/174/92/21 27/131/114/52 105/75/66/66       29             65         164         2009
+     ATR20        br_intraday prox_close_closehi le     0.0225 297    4/226/66/1  86/145/52/14 164/83/34/16        2            116         220         2020
+ATR20_prev      br_low_above3  dist_high_atr_sig le     0.3000 299  22/148/93/36  21/121/99/58  97/57/53/73        4            116         171         2031
+     ATR20     br_low_prevlow prox_close_closehi le     0.0225 298    2/220/73/3  82/146/54/16 164/74/43/17        3            117         214         2059
+ATR20_prev    br_close_above5      prox_close_hi le     0.0325 280    5/207/66/2  82/130/55/13 154/69/39/17       15             95         197         2072
+     ATR20    br_close_above5  prox_prevclose_hi le     0.0075 257   24/155/70/8  25/119/85/28 101/64/44/45       38             56         101         2081
+ATR20_prev    br_close_above3  dist_high_atr_sig le     0.3000 326  37/176/92/21 28/131/115/52 107/75/66/66       31             67         162         2097
+ATR20_prev        br_intraday       prox_high_hi le     0.0025 256  33/148/61/14  26/122/75/33  93/60/46/52       39             53         133         2098
+     ATR20    br_close_above5      prox_close_hi le     0.0325 278    5/205/66/2  80/131/54/13 153/69/38/17       17             93         197         2102
+ATR20_prev   br_close_prevlow prox_close_closehi le     0.0250 285    2/217/65/1  79/139/51/16 147/77/42/17       10            108         186         2106
+ATR20_prev br_close_prevclose prox_close_closehi le     0.0225 283    3/215/64/1  83/134/52/14 154/80/33/16       12            104         200         2120
+     ATR20        br_intraday       prox_high_hi le     0.0025 255  33/147/61/14  26/121/75/33  92/60/46/52       40             54         133         2143
+ATR20_prev      br_low_above3      prox_close_hi le     0.0325 280    2/198/78/2  62/150/57/11 149/76/39/16       15            101         186         2151
+     ATR20    br_close_above5 dist_high_atr_prev le     0.4000 320  25/176/95/24 31/128/108/53 108/72/59/67       25             85         146         2171
+ATR20_prev      br_low_above2  dist_high_atr_sig le     0.2000 275  24/145/75/31  26/109/89/51  89/48/54/68       20             94         166         2176
+     ATR20   br_close_prevlow prox_close_closehi le     0.0250 280    2/213/64/1  77/136/51/16 145/75/41/17       15            103         182         2177
+     ATR20        br_intraday  dist_high_atr_sig le     0.2000 330  40/185/83/22 29/147/102/52 111/75/61/73       35             65         162         2187
+ATR20_prev    br_close_above5  dist_high_atr_sig le     0.3000 268  23/148/77/20  23/105/97/43  90/57/54/55       27             83         136         2191
+     ATR20 br_close_prevclose prox_close_closehi le     0.0225 277    3/210/63/1  82/132/50/13 151/80/31/15       18             98         200         2210
+ATR20_prev      br_low_above5      prox_close_hi le     0.0350 266    3/177/81/5  59/137/56/14 142/69/34/20       29             79         169         2224
+     ATR20      br_low_above2  dist_high_atr_sig le     0.2000 271  24/145/73/29  26/108/88/49  89/48/52/66       24             90         162         2232
+     ATR20      br_low_above3      prox_close_hi le     0.0325 275    2/199/73/1  60/149/56/10 148/74/38/15       20             98         188         2258
+ATR20_prev    br_close_above5 dist_high_atr_prev le     0.4000 322  25/178/95/24 32/128/109/53 110/72/59/67       27             87         144         2259
+ATR20_prev      br_low_above3 dist_high_atr_prev le     0.3000 285  21/140/88/36  20/115/93/57  92/55/52/71       10            120         169         2269
+ATR20_prev        br_intraday  dist_high_atr_sig le     0.2000 332  40/187/83/22 30/148/102/52 113/75/61/73       37             67         160         2275
+     ATR20    br_close_above5  dist_high_atr_sig le     0.3000 266  23/146/77/20  22/105/96/43  88/57/54/55       29             85         138         2283
+     ATR20    br_close_above5       range_high_i ge     0.9600 313 20/163/100/30 20/116/110/67  93/65/63/81       18            104         201         2301
+ATR20_prev   br_low_prevclose prox_close_closehi le     0.0200 270    2/191/75/2  79/124/54/13 149/65/39/17       25             91         188         2303
+ATR20_prev    br_close_above5       range_high_i ge     0.9600 315 20/165/100/30 21/116/111/67  95/65/63/81       20            102         199         2329
+ATR20_prev        br_intraday prox_close_closehi le     0.0225 304    4/232/67/1  88/147/54/15 167/84/36/17        9            123         220         2335
+     ATR20      br_low_above3 dist_high_atr_prev le     0.3000 280  21/140/85/34  20/114/91/55  91/55/50/69       15            115         165         2340
+     ATR20    br_close_above2       range_high_i ge     0.9800 262  29/141/72/20  22/103/89/48  80/55/54/65       33             79         172         2347
+ATR20_prev    br_close_above2       range_high_i ge     0.9800 262  29/141/72/20  22/103/89/48  80/55/54/65       33             79         172         2347
+ATR20_prev      br_low_above2      prox_close_hi le     0.0300 267    3/193/69/2  67/143/47/10 155/68/33/11       28             86         220         2350
+     ATR20      br_low_above5      prox_close_hi le     0.0350 259    3/175/77/4  57/135/54/13 141/66/32/19       36             74         177         2367
+ATR20_prev     br_low_prevlow  dist_high_atr_sig le     0.1000 272  22/141/83/26  30/108/83/51  93/49/51/67       23            103         160         2395
+     ATR20   br_low_prevclose prox_close_closehi le     0.0200 264    2/188/72/2  80/121/50/13 147/64/37/16       31             85         192         2397
+     ATR20    br_close_above5  prox_high_closehi le     0.0000 327  28/175/88/36 37/124/105/61 114/66/56/78       32             86         149         2399
+ATR20_prev      br_low_above3 prox_close_closehi le     0.0250 254    1/177/71/5  55/137/48/14 127/70/40/16       41             71         163         2458
+     ATR20   br_low_prevclose dist_high_atr_prev le     0.1000 323 28/163/103/29 35/128/103/57 111/68/56/79       28             98         151         2461
+     ATR20    br_close_above2       range_high_i ge     0.9700 330  32/180/94/24 26/131/113/60 100/71/68/81       35             81         198         2463
+     ATR20     br_low_prevlow  dist_high_atr_sig le     0.1000 268  22/140/82/24  30/106/83/49  93/48/50/65       27            101         158         2483
+     ATR20      br_low_above2      prox_close_hi le     0.0300 260    3/191/65/1  65/140/45/10 153/65/31/11       35             81         220         2485
+ATR20_prev    br_close_above5  prox_high_closehi le     0.0000 329  28/177/88/36 38/123/107/61 116/65/56/79       34             88         153         2493
+     ATR20    br_close_above3 prox_close_closehi le     0.0250 308    2/225/80/1  82/149/60/17 160/84/44/18       13            131         196         2551
+ATR20_prev    br_close_above2       range_high_i ge     0.9700 332  32/181/95/24 26/131/114/61 101/71/68/82       37             83         200         2555
+     ATR20      br_low_above3 prox_close_closehi le     0.0250 247    1/176/66/4  53/134/47/13 124/68/39/15       48             66         165         2595
+ATR20_prev     br_low_prevlow prox_close_closehi le     0.0225 310    2/226/79/3  84/152/57/17 168/77/47/18       15            129         222         2607
+ATR20_prev    br_close_above5 dist_high_atr_prev le     0.3000 258  20/142/76/20   24/98/93/43  84/55/53/54       37             91         150         2625
+ATR20_prev    br_close_above3      prox_close_hi le     0.0300 251    4/186/61/0  73/123/44/11 143/66/30/12       44             74         200         2630
+
+EXACT N295 TOP100
+   atr_ref         break_rule        high_metric op  threshold   N    current50       peak50      peak100  score_N  score_current  score_peak  score_total
+ATR20_prev br_close_prevclose dist_high_atr_prev le       0.20 295 33/164/77/21 28/124/95/48  95/67/57/67        0             58         145         1015
+ATR20_prev    br_close_above3      range_close_i ge       0.83 295  0/81/144/70  6/62/93/134 35/58/57/144        0            290         435         4785
