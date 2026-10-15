@@ -1,0 +1,21 @@
+name: Probe Kabutan TOPIX
+
+on:
+  push:
+    branches:
+      - analysis/paradise-lost
+    paths:
+      - 'analysis/probe_kabutan_topix.py'
+      - '.github/workflows/probe_kabutan_topix.yml'
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pandas requests lxml
+      - run: python analysis/probe_kabutan_topix.py
