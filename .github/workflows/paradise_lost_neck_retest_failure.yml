@@ -1,0 +1,38 @@
+name: Paradise Lost Neck Retest Failure
+
+on:
+  push:
+    branches:
+      - analysis/paradise-lost
+    paths:
+      - 'analysis/paradise_lost_neck_retest_failure.py'
+      - '.github/workflows/paradise_lost_neck_retest_failure.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  retest-failure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: analysis/paradise-lost
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install pandas numpy yfinance
+      - name: Rebuild Yahoo-clean source
+        run: python analysis/rebuild_yahoo_clean_sep18.py
+      - name: Run retest-failure analysis
+        run: python analysis/paradise_lost_neck_retest_failure.py
+      - name: Show summary
+        run: cat analysis_outputs/paradise_lost_neck_retest_failure/summary.txt
+      - name: Commit outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add analysis_outputs/paradise_lost_neck_retest_failure
+          git diff --cached --quiet || git commit -m 'Add neckline retest-failure results'
+          git push origin analysis/paradise-lost
