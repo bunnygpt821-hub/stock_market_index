@@ -1,0 +1,40 @@
+name: Paradise Lost Sango x E315
+
+on:
+  push:
+    branches:
+      - analysis/paradise-lost
+    paths:
+      - 'analysis/paradise_lost_sango_e315.py'
+      - '.github/workflows/paradise_lost_sango_e315.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  PYTHONUNBUFFERED: '1'
+
+jobs:
+  sango-e315:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pandas numpy yfinance
+      - name: Rebuild Yahoo-clean source
+        run: python analysis/rebuild_yahoo_clean_sep18.py
+      - name: Run Sango x E315 analysis
+        run: python analysis/paradise_lost_sango_e315.py
+      - name: Show summary
+        run: cat analysis_outputs/paradise_lost_sango_e315/summary.txt
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis_outputs/paradise_lost_sango_e315/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Add Sango x E315 validation outputs"
+          git push
