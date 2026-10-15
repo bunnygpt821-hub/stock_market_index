@@ -37,9 +37,9 @@ def build_breadth(src: pd.DataFrame) -> pd.DataFrame:
         d = g.sort_values('Date').drop_duplicates('Date', keep='last').copy()
         for n in [25,50,100]:
             d[f'MA{n}'] = d.Close.rolling(n, min_periods=n).mean()
-        d['above25'] = d.Close > d.MA25
-        d['ma50gt100'] = d.MA50 > d.MA100
-        d['full_up'] = (d.Close > d.MA25) & (d.MA25 > d.MA50) & (d.MA50 > d.MA100)
+        d['above25'] = (d.Close > d.MA25).astype(float)
+        d['ma50gt100'] = (d.MA50 > d.MA100).astype(float)
+        d['full_up'] = ((d.Close > d.MA25) & (d.MA25 > d.MA50) & (d.MA50 > d.MA100)).astype(float)
         valid = d[['MA25','MA50','MA100']].notna().all(axis=1)
         d.loc[~valid, ['above25','ma50gt100','full_up']] = np.nan
         frames.append(d[['Date','Ticker','above25','ma50gt100','full_up']])
@@ -74,7 +74,6 @@ def classify(row) -> str:
     tp=row.TOPIX; m50=row.TOPIX_MA50; m100=row.TOPIX_MA100; d100=row.TOPIX_d100
     if any(pd.isna(v) for v in [a25,fu,gap,tp,m50,m100,d100]):
         return 'Other/Transition'
-    # Historical precedence preserved: Risk-Off -> Fast Damage -> Rollover -> Overheat -> Broad -> Thin -> Other.
     if tp < m100:
         return 'Risk-Off'
     if a25 < 40 and tp < m50:
@@ -115,7 +114,6 @@ def main():
     true=tops[tops['True120'].astype(str).str.lower().isin(['true','1'])].copy()
     z=true.merge(regime,left_on='PeakDate',right_on='Date',how='left').drop(columns=['Date'])
 
-    # Percentile tiers for each altitude metric, defined on the full True120 top distribution.
     thresholds=[]; tier_rows=[]
     for f in ALT_FEATURES:
         z[f'{f}_pct_rank']=pd.to_numeric(z[f],errors='coerce').rank(pct=True,method='average')
@@ -131,13 +129,11 @@ def main():
     pd.DataFrame(thresholds).to_csv(OUT/'01_altitude_thresholds.csv',index=False)
     pd.DataFrame(tier_rows).to_csv(OUT/'02_tier_by_regime.csv',index=False)
 
-    # Composite altitude: average percentile across d50,d100,ret60,GainFromLow120_pct.
     z['CompositeRaw']=z[[f'{f}_pct_rank' for f in CORE]].mean(axis=1)
     z['CompositePctRank']=z.CompositeRaw.rank(pct=True,method='average')
     comp_tier,comp_th=tier_series(z.CompositeRaw)
     z['CompositeTier']=comp_tier
 
-    # ANY-core extreme flags: useful for "any Everest-like metric".
     for q,label in [(0.95,'AnyCoreP95'),(0.995,'AnyCoreP995')]:
         flags=[]
         for f in CORE:
@@ -146,7 +142,6 @@ def main():
 
     z.to_csv(OUT/'03_true120_tops_with_regime.csv',index=False)
 
-    # Regime summary, including maxima: directly tests whether Thin/Damage ever reaches monster altitude.
     summary=[]
     for reg in REGIME_ORDER:
         g=z[z.Regime==reg]
@@ -164,25 +159,21 @@ def main():
     summ=pd.DataFrame(summary)
     summ.to_csv(OUT/'04_regime_altitude_summary.csv',index=False)
 
-    # Composite tier distribution by regime.
     comp=[]
     for tier,g in z.groupby('CompositeTier'):
         for reg in REGIME_ORDER:
             n=int((g.Regime==reg).sum()); comp.append({'Tier':tier,'Regime':reg,'N':n,'TierN':len(g),'ShareWithinTier':n/len(g) if len(g) else np.nan})
     comp=pd.DataFrame(comp); comp.to_csv(OUT/'05_composite_tier_by_regime.csv',index=False)
 
-    # Within-regime composition.
     within=[]
     for reg,g in z.groupby('Regime'):
         for tier,n in g.CompositeTier.value_counts(dropna=False).items():
             within.append({'Regime':reg,'Tier':tier,'N':int(n),'RegimeN':len(g),'ShareWithinRegime':n/len(g)})
     pd.DataFrame(within).to_csv(OUT/'06_composite_within_regime.csv',index=False)
 
-    # Extreme event list.
     extreme=z[(z.CompositePctRank>=.95)|z.AnyCoreP995].copy().sort_values(['CompositePctRank','GainFromLow120_pct'],ascending=False)
     extreme.to_csv(OUT/'07_extreme_events.csv',index=False)
 
-    # Cross-tab for concise summary.
     pivot=comp.pivot(index='Tier',columns='Regime',values='N').fillna(0).astype(int)
     lines=[]
     lines.append('PARADISE LOST — TRUE120 TOP ALTITUDE x MARKET REGIME')
