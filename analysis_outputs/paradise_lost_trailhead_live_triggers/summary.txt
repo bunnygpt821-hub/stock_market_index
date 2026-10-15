@@ -1,0 +1,39 @@
+PARADISE LOST — PRACTICAL MOUNTAIN LIVE TRAILHEAD TRIGGERS
+Known-mountain panel: ex-post P50-90 True120 mountains only; compares how early each point-in-time trigger recognizes the climb.
+Entry convention for remaining-upside metrics = next session open after trigger signal.
+Prospective candidate panel: 10-session low that is not undercut for the next 3 sessions; candidate becomes known on day +3; same ticker candidates suppressed for 20 sessions. Trigger searched through +40 sessions. Outcome = max High over +120 sessions from candidate low. This panel does NOT require a future True120 top.
+SANGO3/5 = current High exceeds prior 3/5-session High. RECLAIM25_SANGO3 = Close>25MA and SANGO3 on same signal day.
+
+KNOWN PRACTICAL MOUNTAINS — DETECTION / TIMING / REMAINING UPSIDE
+                 Band          Trigger  BaseN  TriggeredN  DetectionRate  DelayEntryMedian  GainUsedPctMedian  RemainingUpsidePctMedian  RemainingClimbFractionMedian  DaysEntryToPeakMedian  Retest2PctRate  SignalD50Median
+  P50-75 Mid Mountain        RECLAIM25    206         206          1.000               8.0              8.286                    27.001                         0.786                   76.0           0.277           -0.715
+  P50-75 Mid Mountain        RECLAIM50    206         202          0.981              11.0             11.029                    23.606                         0.702                   70.0           0.198            0.930
+  P50-75 Mid Mountain   MA25_SLOPE5_UP    206         206          1.000              16.0             11.846                    23.368                         0.690                   66.0           0.131            2.592
+  P50-75 Mid Mountain       CROSS25_50    206         184          0.893              26.5             15.671                    19.460                         0.592                   51.0           0.076            5.127
+  P50-75 Mid Mountain           SANGO3    206         206          1.000               3.0              4.996                    32.120                         0.878                   86.0           0.510           -3.420
+  P50-75 Mid Mountain           SANGO5    206         206          1.000               4.0              6.139                    30.015                         0.852                   84.5           0.408           -2.397
+  P50-75 Mid Mountain RECLAIM25_SANGO3    206         206          1.000               7.0              8.089                    27.216                         0.789                   79.5           0.286           -0.698
+P75-90 Practical High        RECLAIM25    123         123          1.000               7.0              9.034                    40.481                         0.832                   86.0           0.187           -0.826
+P75-90 Practical High        RECLAIM50    123         120          0.976              11.0             12.943                    36.836                         0.771                   77.5           0.150            1.265
+P75-90 Practical High   MA25_SLOPE5_UP    123         118          0.959              15.0             13.222                    35.876                         0.770                   76.5           0.085            3.237
+P75-90 Practical High       CROSS25_50    123         109          0.886              25.0             18.198                    31.565                         0.668                   65.0           0.037            5.925
+P75-90 Practical High           SANGO3    123         123          1.000               3.0              5.577                    46.166                         0.894                   94.0           0.431           -3.594
+P75-90 Practical High           SANGO5    123         123          1.000               4.0              6.545                    43.656                         0.875                   94.0           0.350           -2.771
+P75-90 Practical High RECLAIM25_SANGO3    123         123          1.000               6.0              8.562                    41.197                         0.840                   91.0           0.236           -0.640
+P50-90 Practical Core        RECLAIM25    329         329          1.000               7.0              8.562                    32.239                         0.800                   81.0           0.243           -0.752
+P50-90 Practical Core        RECLAIM50    329         322          0.979              11.0             11.282                    28.823                         0.737                   73.0           0.180            1.023
+P50-90 Practical Core   MA25_SLOPE5_UP    329         324          0.985              16.0             12.518                    27.163                         0.719                   70.5           0.114            2.851
+P50-90 Practical Core       CROSS25_50    329         293          0.891              26.0             17.040                    23.140                         0.639                   56.0           0.061            5.502
+P50-90 Practical Core           SANGO3    329         329          1.000               3.0              5.305                    36.987                         0.883                   89.0           0.480           -3.444
+P50-90 Practical Core           SANGO5    329         329          1.000               4.0              6.413                    36.066                         0.862                   88.0           0.386           -2.500
+P50-90 Practical Core RECLAIM25_SANGO3    329         329          1.000               6.0              8.221                    32.753                         0.810                   84.0           0.267           -0.698
+
+PROSPECTIVE BOTTOM CANDIDATES — FALSE-POSITIVE / GROWTH FILTER
+         Trigger  TriggeredCandidates  UnionCandidateN  TriggerCoverageVsUnion  Gain40Precision  Gain55Precision  ForwardGain120Median  ForwardGain120P75  DelayMedian  Undercut20MedianPct
+       RECLAIM25                14670            15462                   0.949            0.209            0.100                21.491             36.081         11.0               -0.548
+       RECLAIM50                12192            15462                   0.789            0.209            0.099                21.933             36.314         15.0               -0.594
+  MA25_SLOPE5_UP                11567            15462                   0.748            0.216            0.102                22.408             36.857         21.0               -0.590
+      CROSS25_50                 7185            15462                   0.465            0.272            0.130                26.307             41.778         27.0                0.140
+          SANGO3                15462            15462                   1.000            0.211            0.102                21.564             36.261          3.0               -0.459
+          SANGO5                15462            15462                   1.000            0.211            0.102                21.564             36.261          5.0               -0.459
+RECLAIM25_SANGO3                15215            15462                   0.984            0.214            0.104                21.879             36.562          7.0               -0.381
