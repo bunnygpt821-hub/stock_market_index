@@ -1,0 +1,33 @@
+name: Paradise Lost Practical Mountains
+
+on:
+  push:
+    branches:
+      - analysis/paradise-lost
+    paths:
+      - 'analysis/paradise_lost_practical_mountain_trailheads.py'
+      - '.github/workflows/paradise_lost_practical_mountains.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  practical:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pandas numpy
+      - run: python analysis/paradise_lost_practical_mountain_trailheads.py
+      - run: cat analysis_outputs/paradise_lost_practical_mountains/summary.txt
+      - name: Commit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis_outputs/paradise_lost_practical_mountains/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Add practical mountain frequency outputs"
+          git push
