@@ -1,0 +1,98 @@
+PARADISE LOST — TRUE120 TOP ALTITUDE x MARKET REGIME
+Regime is point-in-time at PeakDate. Top labels are ex-post True120, so this studies where actual cycle tops formed, not a live entry rule.
+Breadth uses the current Nikkei225 panel historically, so survivorship bias remains.
+Regime rules: Risk-Off TOPIX<100MA; Fast Damage Above25<40 & TOPIX<50MA; Rollover Gap>=25 & Above25<50; Overheat=Broad + TOPIX/100MA>=+10%; Broad Above25>=60 & FullUp>=40 & Gap<15 & TOPIX>50MA; Thin Above25>=50 & FullUp<35 & TOPIX>100MA; precedence in that order.
+True120 tops=822; unmatched regime=0
+
+ALTITUDE THRESHOLDS
+           Feature    P75    P95   P99.5
+               d25  9.533 16.514  30.201
+               d50 13.931 22.891  41.927
+              d100 19.602 33.945  53.147
+             ret20 14.937 26.250  47.549
+             ret60 25.583 46.883  93.031
+ GainFromLow60_pct 35.927 61.294 107.681
+GainFromLow120_pct 50.430 91.915 155.110
+GainFromLow120_ATR 14.684 18.819  22.750
+
+COMPOSITE TIER x REGIME — COUNTS
+Regime                    Broad Expansion  Expansion Overheat  Fast Damage  Other/Transition  Risk-Off  Rollover Early  Thin-Rotation
+Tier                                                                                                                                 
+Everest (>=P99.5)                       0                   1            0                 1         1               0              2
+High Mountain (P75-95)                 35                  37            3                38        14               9             28
+Normal Top (<P75)                      88                  41           11               146       106              28            196
+Seven Summits (P95-99.5)                7                   9            0                10         3               2              6
+
+REGIME SUMMARY — CORE MEDIAN / P95 / MAX + EXTREME COUNTS
+            Regime   N  ShareOfAllTops  CompositeMedianPctRank  SevenPlusCompositeN  EverestCompositeN  AnyCoreP95_N  AnyCoreP995_N  d50_median  d50_P95  d50_max  d100_median  d100_P95  d100_max  ret60_median  ret60_P95  ret60_max  GainFromLow120_pct_median  GainFromLow120_pct_P95  GainFromLow120_pct_max
+   Broad Expansion 130           0.158                   0.568                    7                  0            10              1      10.166   22.297   42.984       14.545    33.846    43.614        18.201     46.503     56.794                     35.735                  80.971                 128.761
+Expansion Overheat  88           0.107                   0.763                   10                  1            18              3      13.888   31.765   39.628       19.348    46.374    52.658        25.534     56.613     98.309                     48.043                 131.319                 202.616
+     Thin-Rotation 232           0.282                   0.398                    8                  2            14              4       9.164   20.863   93.293        9.943    28.926    95.417        13.475     41.425    126.519                     31.576                  72.783                 184.384
+    Rollover Early  39           0.047                   0.432                    2                  0             3              0       6.093   18.937   30.952       11.282    32.176    43.824        15.765     38.217     59.896                     43.935                  88.733                 125.618
+       Fast Damage  14           0.017                   0.674                    0                  0             1              0      10.049   17.711   18.909       16.568    24.673    26.564        23.639     32.834     34.851                     42.024                  86.869                  94.822
+          Risk-Off 124           0.151                   0.351                    4                  1             6              2       7.505   19.722   42.023        9.276    29.271    57.165        12.219     32.321     89.176                     29.716                  76.709                 269.975
+  Other/Transition 195           0.237                   0.546                   11                  1            19              2       9.861   20.938   41.104       14.090    34.654    59.497        16.336     51.423     97.384                     37.160                 108.343                 163.131
+
+COMPOSITE TIER DISTRIBUTION — SHARE WITHIN TIER
+                    Tier             Regime   N  TierN  ShareWithinTier
+       Everest (>=P99.5)    Broad Expansion   0      5            0.000
+       Everest (>=P99.5) Expansion Overheat   1      5            0.200
+       Everest (>=P99.5)      Thin-Rotation   2      5            0.400
+       Everest (>=P99.5)     Rollover Early   0      5            0.000
+       Everest (>=P99.5)        Fast Damage   0      5            0.000
+       Everest (>=P99.5)           Risk-Off   1      5            0.200
+       Everest (>=P99.5)   Other/Transition   1      5            0.200
+  High Mountain (P75-95)    Broad Expansion  35    164            0.213
+  High Mountain (P75-95) Expansion Overheat  37    164            0.226
+  High Mountain (P75-95)      Thin-Rotation  28    164            0.171
+  High Mountain (P75-95)     Rollover Early   9    164            0.055
+  High Mountain (P75-95)        Fast Damage   3    164            0.018
+  High Mountain (P75-95)           Risk-Off  14    164            0.085
+  High Mountain (P75-95)   Other/Transition  38    164            0.232
+       Normal Top (<P75)    Broad Expansion  88    616            0.143
+       Normal Top (<P75) Expansion Overheat  41    616            0.067
+       Normal Top (<P75)      Thin-Rotation 196    616            0.318
+       Normal Top (<P75)     Rollover Early  28    616            0.045
+       Normal Top (<P75)        Fast Damage  11    616            0.018
+       Normal Top (<P75)           Risk-Off 106    616            0.172
+       Normal Top (<P75)   Other/Transition 146    616            0.237
+Seven Summits (P95-99.5)    Broad Expansion   7     37            0.189
+Seven Summits (P95-99.5) Expansion Overheat   9     37            0.243
+Seven Summits (P95-99.5)      Thin-Rotation   6     37            0.162
+Seven Summits (P95-99.5)     Rollover Early   2     37            0.054
+Seven Summits (P95-99.5)        Fast Damage   0     37            0.000
+Seven Summits (P95-99.5)           Risk-Off   3     37            0.081
+Seven Summits (P95-99.5)   Other/Transition  10     37            0.270
+
+TOP 30 EXTREMES
+Ticker   PeakDate             Regime    d25    d50   d100   ret20   ret60  GainFromLow120_pct  GainFromLow120_ATR  CompositePctRank            CompositeTier  FutureDD120_pct
+7974.T 2016-07-19      Thin-Rotation 87.122 93.293 95.417 116.343  93.484             144.760              12.993             1.000        Everest (>=P99.5)          -38.532
+4902.T 2024-11-08      Thin-Rotation 27.415 44.341 53.171  49.734  95.992             115.526              13.328             0.999        Everest (>=P99.5)          -48.948
+2432.T 2025-02-25   Other/Transition 26.366 35.418 59.497  43.959  57.886             163.131              12.645             0.998        Everest (>=P99.5)          -44.296
+8604.T 2016-12-12 Expansion Overheat 21.056 36.262 50.358  33.209  59.058             136.038              21.620             0.996        Everest (>=P99.5)          -17.937
+3697.T 2018-04-04           Risk-Off 13.249 24.369 52.941  22.818  85.397             269.975              14.821             0.995        Everest (>=P99.5)          -33.277
+4506.T 2018-12-06           Risk-Off 30.726 42.023 57.165  41.393  89.176              98.365              11.171             0.994 Seven Summits (P95-99.5)          -50.067
+9501.T 2022-07-05           Risk-Off 26.130 29.599 46.900  30.080  71.842             132.982              14.834             0.991 Seven Summits (P95-99.5)          -33.584
+7013.T 2026-02-10 Expansion Overheat 25.703 39.628 49.605  31.540  54.480             125.072              13.429             0.991 Seven Summits (P95-99.5)          -52.077
+6753.T 2021-02-15 Expansion Overheat 11.132 30.403 52.223  22.060  98.309             109.383              11.620             0.991 Seven Summits (P95-99.5)          -35.087
+2432.T 2016-09-08      Thin-Rotation 22.614 30.545 47.471  35.338  57.895             127.677              18.254             0.989 Seven Summits (P95-99.5)          -43.085
+7735.T 2024-03-07 Expansion Overheat  4.468 22.201 52.658  16.894  71.559             202.616              13.716             0.987 Seven Summits (P95-99.5)          -55.649
+5801.T 2025-01-23      Thin-Rotation 13.968 21.102 57.656  18.280 126.519             184.384              14.232             0.987 Seven Summits (P95-99.5)          -55.079
+8002.T 2026-02-12 Expansion Overheat 20.914 32.065 47.560  24.649  57.762             101.386              16.271             0.985 Seven Summits (P95-99.5)          -27.052
+6723.T 2023-07-05 Expansion Overheat  9.922 24.054 39.456  19.218  59.628             134.682              17.999             0.984 Seven Summits (P95-99.5)          -32.730
+8267.T 2025-11-25   Other/Transition 14.517 30.199 46.230  18.482  54.583             109.051              16.287             0.983 Seven Summits (P95-99.5)          -52.320
+6976.T 2021-01-29     Rollover Early 13.334 22.898 43.824  26.468  59.896             125.618              15.076             0.982 Seven Summits (P95-99.5)          -30.656
+7012.T 2026-03-03   Other/Transition  8.776 23.095 39.804  34.252  75.464             119.507              10.906             0.981 Seven Summits (P95-99.5)          -32.633
+4523.T 2018-07-25      Thin-Rotation 19.068 28.012 43.382  40.704  52.442             115.244              12.226             0.979 Seven Summits (P95-99.5)          -29.668
+6857.T 2024-02-16   Other/Transition 17.163 31.396 45.773  31.190  49.045             113.029              14.872             0.978 Seven Summits (P95-99.5)          -33.408
+6326.T 2026-02-13 Expansion Overheat 25.324 32.268 43.965  27.443  50.760              94.425              16.711             0.977 Seven Summits (P95-99.5)          -26.790
+6920.T 2022-11-16      Thin-Rotation 35.770 49.659 52.571  62.268  35.376             107.018              12.477             0.976 Seven Summits (P95-99.5)          -40.881
+3697.T 2025-06-03      Thin-Rotation 20.017 33.758 35.033  30.087  45.588              88.266              14.086             0.974 Seven Summits (P95-99.5)          -47.425
+6506.T 2018-01-18   Other/Transition 15.467 20.107 39.296  23.958  51.015             122.451              22.762             0.973 Seven Summits (P95-99.5)          -39.871
+2413.T 2021-01-08    Broad Expansion 12.397 20.792 38.476  20.790  49.151             124.265              18.381             0.972 Seven Summits (P95-99.5)          -35.635
+5019.T 2017-12-27    Broad Expansion 13.149 24.450 41.551  23.898  46.142              84.501              17.900             0.971 Seven Summits (P95-99.5)          -26.247
+4004.T 2018-01-15    Broad Expansion 13.235 21.744 39.087  30.187  46.887             102.444              14.929             0.970 Seven Summits (P95-99.5)          -34.580
+4385.T 2019-03-28   Other/Transition  6.449 21.684 27.520  11.862  97.384             108.040              12.261             0.968 Seven Summits (P95-99.5)          -33.850
+8002.T 2023-06-23    Broad Expansion 14.947 22.750 33.957  25.339  47.755              87.528              14.749             0.967 Seven Summits (P95-99.5)          -20.203
+8035.T 2017-11-09    Broad Expansion 18.479 29.683 39.171  32.316  56.794              66.721              17.192             0.966 Seven Summits (P95-99.5)          -23.770
+7735.T 2017-11-09    Broad Expansion 24.241 34.550 39.218  37.722  47.027              67.001              15.464             0.965 Seven Summits (P95-99.5)          -31.100

@@ -1,0 +1,29 @@
+Tier,Regime,N,TierN,ShareWithinTier
+Everest (>=P99.5),Broad Expansion,0,5,0.0
+Everest (>=P99.5),Expansion Overheat,1,5,0.2
+Everest (>=P99.5),Thin-Rotation,2,5,0.4
+Everest (>=P99.5),Rollover Early,0,5,0.0
+Everest (>=P99.5),Fast Damage,0,5,0.0
+Everest (>=P99.5),Risk-Off,1,5,0.2
+Everest (>=P99.5),Other/Transition,1,5,0.2
+High Mountain (P75-95),Broad Expansion,35,164,0.21341463414634146
+High Mountain (P75-95),Expansion Overheat,37,164,0.22560975609756098
+High Mountain (P75-95),Thin-Rotation,28,164,0.17073170731707318
+High Mountain (P75-95),Rollover Early,9,164,0.054878048780487805
+High Mountain (P75-95),Fast Damage,3,164,0.018292682926829267
+High Mountain (P75-95),Risk-Off,14,164,0.08536585365853659
+High Mountain (P75-95),Other/Transition,38,164,0.23170731707317074
+Normal Top (<P75),Broad Expansion,88,616,0.14285714285714285
+Normal Top (<P75),Expansion Overheat,41,616,0.06655844155844155
+Normal Top (<P75),Thin-Rotation,196,616,0.3181818181818182
+Normal Top (<P75),Rollover Early,28,616,0.045454545454545456
+Normal Top (<P75),Fast Damage,11,616,0.017857142857142856
+Normal Top (<P75),Risk-Off,106,616,0.17207792207792208
+Normal Top (<P75),Other/Transition,146,616,0.237012987012987
+Seven Summits (P95-99.5),Broad Expansion,7,37,0.1891891891891892
+Seven Summits (P95-99.5),Expansion Overheat,9,37,0.24324324324324326
+Seven Summits (P95-99.5),Thin-Rotation,6,37,0.16216216216216217
+Seven Summits (P95-99.5),Rollover Early,2,37,0.05405405405405406
+Seven Summits (P95-99.5),Fast Damage,0,37,0.0
+Seven Summits (P95-99.5),Risk-Off,3,37,0.08108108108108109
+Seven Summits (P95-99.5),Other/Transition,10,37,0.2702702702702703
