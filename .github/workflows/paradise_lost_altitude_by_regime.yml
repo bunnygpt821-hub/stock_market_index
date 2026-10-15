@@ -6,6 +6,7 @@ on:
       - analysis/paradise-lost
     paths:
       - 'analysis/paradise_lost_altitude_by_regime.py'
+      - 'analysis/paradise_lost_altitude_by_regime_run.py'
       - '.github/workflows/paradise_lost_altitude_by_regime.yml'
   workflow_dispatch:
 
@@ -28,7 +29,7 @@ jobs:
       - name: Rebuild Yahoo-clean source
         run: python analysis/rebuild_yahoo_clean_sep18.py
       - name: Run altitude-by-regime analysis
-        run: python analysis/paradise_lost_altitude_by_regime.py
+        run: python analysis/paradise_lost_altitude_by_regime_run.py
       - name: Show summary
         run: cat analysis_outputs/paradise_lost_altitude_by_regime/summary.txt
       - name: Commit outputs
