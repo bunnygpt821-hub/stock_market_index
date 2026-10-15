@@ -20,10 +20,12 @@ BASE_URL = 'https://finance.yahoo.co.jp/quote/998405.T/history'
 HEADERS = {'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36'}
 
 
-def _one_page(page: int) -> pd.DataFrame:
-    params={'from':'20150101','to':'20260918','timeFrame':'d','page':str(page)}
+def _one_page(year: int, page: int) -> pd.DataFrame:
+    start=f'{year}0101'
+    end='20260918' if year==2026 else f'{year}1231'
+    params={'from':start,'to':end,'timeFrame':'d','page':str(page)}
     last=None
-    for attempt in range(3):
+    for attempt in range(5):
         try:
             r=requests.get(BASE_URL,params=params,timeout=30,headers=HEADERS)
             r.raise_for_status()
@@ -33,20 +35,20 @@ def _one_page(page: int) -> pd.DataFrame:
             t=tables[0].copy()
             if '日付' not in t.columns or '終値' not in t.columns:
                 return pd.DataFrame()
+            t['_year']=year; t['_page']=page
             return t
         except Exception as e:
-            last=e; time.sleep(1.0+attempt)
-    raise RuntimeError(f'Yahoo Japan TOPIX page {page} failed: {last!r}')
+            last=e; time.sleep(1.5*(attempt+1))
+    print('WARN failed year/page',year,page,repr(last))
+    return pd.DataFrame()
 
 
 def download_topix_yahoo_japan() -> pd.DataFrame:
-    # ~2,900 sessions / 20 rows per page. Fetch a bounded range concurrently,
-    # then dedupe and trim to the requested dates.
     frames=[]
+    tasks=[(year,page) for year in range(2015,2027) for page in range(1,15)]
     with ThreadPoolExecutor(max_workers=4) as ex:
-        futs={ex.submit(_one_page,p):p for p in range(1,161)}
+        futs={ex.submit(_one_page,y,p):(y,p) for y,p in tasks}
         for fut in as_completed(futs):
-            p=futs[fut]
             t=fut.result()
             if len(t): frames.append(t)
     if not frames:
