@@ -25,9 +25,9 @@ def _one_page(year: int, page: int) -> pd.DataFrame:
     end='20260918' if year==2026 else f'{year}1231'
     params={'from':start,'to':end,'timeFrame':'d','page':str(page)}
     last=None
-    for attempt in range(5):
+    for attempt in range(3):
         try:
-            r=requests.get(BASE_URL,params=params,timeout=30,headers=HEADERS)
+            r=requests.get(BASE_URL,params=params,timeout=20,headers=HEADERS)
             r.raise_for_status()
             tables=pd.read_html(StringIO(r.text))
             if not tables:
@@ -38,15 +38,17 @@ def _one_page(year: int, page: int) -> pd.DataFrame:
             t['_year']=year; t['_page']=page
             return t
         except Exception as e:
-            last=e; time.sleep(1.5*(attempt+1))
+            last=e; time.sleep(1.0*(attempt+1))
     print('WARN failed year/page',year,page,repr(last))
     return pd.DataFrame()
 
 
 def download_topix_yahoo_japan() -> pd.DataFrame:
     frames=[]
-    tasks=[(year,page) for year in range(2015,2027) for page in range(1,15)]
-    with ThreadPoolExecutor(max_workers=4) as ex:
+    # 13 pages × 20 rows = 260 sessions, enough for any full Japanese trading year.
+    # For partial 2026 the later pages simply return no usable data.
+    tasks=[(year,page) for year in range(2015,2027) for page in range(1,14)]
+    with ThreadPoolExecutor(max_workers=6) as ex:
         futs={ex.submit(_one_page,y,p):(y,p) for y,p in tasks}
         for fut in as_completed(futs):
             t=fut.result()
