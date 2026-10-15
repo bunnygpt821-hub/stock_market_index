@@ -1,0 +1,36 @@
+name: Paradise Lost Retest Robust Rank
+
+on:
+  push:
+    branches:
+      - analysis/paradise-lost
+    paths:
+      - 'analysis/paradise_lost_retest_robust_rank.py'
+      - '.github/workflows/paradise_lost_retest_robust_rank.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  robust-rank:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: analysis/paradise-lost
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install pandas numpy
+      - name: Rank robustness
+        run: python analysis/paradise_lost_retest_robust_rank.py
+      - name: Show summary
+        run: cat analysis_outputs/paradise_lost_neck_retest_failure/robust_summary.txt
+      - name: Commit outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add analysis_outputs/paradise_lost_neck_retest_failure/05_robust_rank.csv analysis_outputs/paradise_lost_neck_retest_failure/robust_summary.txt
+          git diff --cached --quiet || git commit -m 'Add retest robustness ranking'
+          git push origin analysis/paradise-lost
