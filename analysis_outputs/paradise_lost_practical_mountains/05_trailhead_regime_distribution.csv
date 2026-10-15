@@ -1,0 +1,43 @@
+Band,TrailheadRegime,N,BandN,Share
+P00-50 Base,Broad Expansion,13,410,0.03170731707317073
+P00-50 Base,Expansion Overheat,3,410,0.007317073170731708
+P00-50 Base,Thin-Rotation,37,410,0.09024390243902439
+P00-50 Base,Rollover Early,12,410,0.02926829268292683
+P00-50 Base,Fast Damage,30,410,0.07317073170731707
+P00-50 Base,Risk-Off,271,410,0.6609756097560976
+P00-50 Base,Other/Transition,44,410,0.1073170731707317
+P50-75 Mid Mountain,Broad Expansion,9,206,0.043689320388349516
+P50-75 Mid Mountain,Expansion Overheat,3,206,0.014563106796116505
+P50-75 Mid Mountain,Thin-Rotation,20,206,0.0970873786407767
+P50-75 Mid Mountain,Rollover Early,8,206,0.038834951456310676
+P50-75 Mid Mountain,Fast Damage,23,206,0.11165048543689321
+P50-75 Mid Mountain,Risk-Off,121,206,0.587378640776699
+P50-75 Mid Mountain,Other/Transition,22,206,0.10679611650485436
+P75-90 Practical High,Broad Expansion,3,123,0.024390243902439025
+P75-90 Practical High,Expansion Overheat,2,123,0.016260162601626018
+P75-90 Practical High,Thin-Rotation,13,123,0.10569105691056911
+P75-90 Practical High,Rollover Early,8,123,0.06504065040650407
+P75-90 Practical High,Fast Damage,16,123,0.13008130081300814
+P75-90 Practical High,Risk-Off,63,123,0.5121951219512195
+P75-90 Practical High,Other/Transition,18,123,0.14634146341463414
+P90-95 Upper High,Broad Expansion,1,41,0.024390243902439025
+P90-95 Upper High,Expansion Overheat,0,41,0.0
+P90-95 Upper High,Thin-Rotation,4,41,0.0975609756097561
+P90-95 Upper High,Rollover Early,2,41,0.04878048780487805
+P90-95 Upper High,Fast Damage,4,41,0.0975609756097561
+P90-95 Upper High,Risk-Off,27,41,0.6585365853658537
+P90-95 Upper High,Other/Transition,3,41,0.07317073170731707
+P95-99.5 Seven,Broad Expansion,3,37,0.08108108108108109
+P95-99.5 Seven,Expansion Overheat,4,37,0.10810810810810811
+P95-99.5 Seven,Thin-Rotation,4,37,0.10810810810810811
+P95-99.5 Seven,Rollover Early,2,37,0.05405405405405406
+P95-99.5 Seven,Fast Damage,2,37,0.05405405405405406
+P95-99.5 Seven,Risk-Off,14,37,0.3783783783783784
+P95-99.5 Seven,Other/Transition,8,37,0.21621621621621623
+P99.5-100 Everest,Broad Expansion,1,5,0.2
+P99.5-100 Everest,Expansion Overheat,0,5,0.0
+P99.5-100 Everest,Thin-Rotation,0,5,0.0
+P99.5-100 Everest,Rollover Early,0,5,0.0
+P99.5-100 Everest,Fast Damage,0,5,0.0
+P99.5-100 Everest,Risk-Off,4,5,0.8
+P99.5-100 Everest,Other/Transition,0,5,0.0

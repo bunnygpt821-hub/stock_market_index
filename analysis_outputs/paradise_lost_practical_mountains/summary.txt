@@ -1,0 +1,93 @@
+PARADISE LOST — PRACTICAL MOUNTAIN FREQUENCY x TRAILHEAD
+Bands are based on CompositePctRank of ex-post True120 cycle tops. This is descriptive opportunity supply, not live PF or expectancy.
+Full-year frequency uses 2016-2025; 2026 is YTD through source endpoint.
+FreqDepth = mean annual event count × absolute median future drawdown (%); use only as a rough frequency-depth proxy, not a trading metric.
+
+FREQUENCY / DEPTH
+                 Band  N_total  FullYearMeanN  FullYearMedianN  FullYearMinN  FullYearMaxN  YearsZero  YearsGE5  YearsGE10  N_2026_YTD  ClimbPctMedian  ClimbSessionsMedian  PeakD50Median  PeakD100Median  PeakRet60Median  PeakGain120Median  DD20_Median  DD60_Median  DD120_Median  FreqDepth60  FreqDepth120
+          P00-50 Base      410           40.5             40.5             6            78          0        10          9           5          24.389                 74.5          6.343           7.496            9.180             24.389      -11.217      -18.212       -24.104      737.583       976.196
+  P50-75 Mid Mountain      206           19.9             17.5             7            33          0        10          9           7          39.654                 90.0         11.267          15.950           19.896             39.654      -12.143      -21.694       -28.253      431.702       562.244
+P75-90 Practical High      123           11.6             11.5             5            17          0        10          7           7          54.461                 98.0         14.827          23.260           29.695             54.461      -12.945      -22.939       -29.734      266.089       344.911
+    P90-95 Upper High       41            4.1              3.0             0            11          1         3          1           0          69.579                 96.0         19.324          30.281           40.297             69.579      -14.665      -23.047       -32.320       94.492       132.511
+       P95-99.5 Seven       37            3.0              3.0             0             6          1         2          0           7         108.040                105.0         28.012          39.804           51.015            108.040      -20.620      -27.628       -33.584       82.883       100.753
+    P99.5-100 Everest        5            0.5              0.0             0             2          6         0          0           0         144.760                105.0         36.262          53.171           85.397            144.760      -22.844      -31.300       -38.532       15.650        19.266
+
+ANNUAL COUNTS
+Band  P00-50 Base  P50-75 Mid Mountain  P75-90 Practical High  P90-95 Upper High  P95-99.5 Seven  P99.5-100 Everest
+Year                                                                                                               
+2016            6                    7                     12                  3               3                  2
+2017           31                   13                     11                  1               3                  0
+2018           78                   30                     13                  3               6                  1
+2019           57                   21                     13                  5               3                  0
+2020           24                   11                     10                  3               0                  0
+2021           50                   31                     17                  9               5                  0
+2022           55                   27                      9                  2               2                  0
+2023           20                   14                      9                  0               2                  0
+2024           61                   33                     17                 11               3                  1
+2025           23                   12                      5                  4               3                  1
+2026            5                    7                      7                  0               7                  0
+
+TRAILHEAD ALTITUDE — MEDIANS
+Feature                ClimbPct  ClimbSessions  Trail_Close_d100  Trail_Close_d25  Trail_Close_d50  Trail_Low_d100  Trail_Low_d50  Trail_ret20  Trail_ret60
+Band                                                                                                                                                       
+P00-50 Base              24.389           74.5            -8.044           -5.527           -6.901          -9.348         -8.324       -6.989       -8.507
+P50-75 Mid Mountain      39.654           90.0            -7.587           -5.528           -6.916          -8.947         -8.038       -7.277       -8.491
+P75-90 Practical High    54.461           98.0            -8.403           -6.307           -8.243         -10.208        -10.325       -7.690       -7.871
+P90-95 Upper High        69.579           96.0           -10.120           -6.836           -8.440         -10.811         -9.216       -9.595       -8.409
+P95-99.5 Seven          108.040          105.0            -5.485           -4.401           -6.304          -6.949         -6.778       -7.420       -7.905
+P99.5-100 Everest       144.760          105.0           -12.828          -10.111          -12.199         -15.821        -15.213      -15.897      -14.493
+
+TRAILHEAD ALTITUDE — P25/P50/P75
+                 Band          Feature  Nvalid     P25     P50    P75
+          P00-50 Base  Trail_Close_d25     407  -8.307  -5.527 -3.021
+          P00-50 Base  Trail_Close_d50     407 -10.414  -6.901 -3.771
+          P00-50 Base Trail_Close_d100     404 -12.146  -8.044 -3.749
+          P00-50 Base    Trail_Low_d50     407 -11.690  -8.324 -5.049
+          P00-50 Base   Trail_Low_d100     404 -13.431  -9.348 -5.062
+          P00-50 Base      Trail_ret20     407 -11.441  -6.989 -3.561
+          P00-50 Base      Trail_ret60     407 -14.901  -8.507 -2.788
+  P50-75 Mid Mountain  Trail_Close_d25     206  -9.252  -5.528 -2.987
+  P50-75 Mid Mountain  Trail_Close_d50     206 -11.840  -6.916 -3.240
+  P50-75 Mid Mountain Trail_Close_d100     205 -14.261  -7.587 -2.439
+  P50-75 Mid Mountain    Trail_Low_d50     206 -12.721  -8.038 -4.684
+  P50-75 Mid Mountain   Trail_Low_d100     205 -15.915  -8.947 -3.968
+  P50-75 Mid Mountain      Trail_ret20     206 -13.277  -7.277 -3.427
+  P50-75 Mid Mountain      Trail_ret60     206 -16.428  -8.491 -0.865
+P75-90 Practical High  Trail_Close_d25     122  -9.588  -6.307 -3.784
+P75-90 Practical High  Trail_Close_d50     122 -12.215  -8.243 -3.116
+P75-90 Practical High Trail_Close_d100     122 -15.442  -8.403 -0.254
+P75-90 Practical High    Trail_Low_d50     122 -13.505 -10.325 -4.802
+P75-90 Practical High   Trail_Low_d100     122 -16.493 -10.208 -1.814
+P75-90 Practical High      Trail_ret20     122 -14.493  -7.690 -3.408
+P75-90 Practical High      Trail_ret60     122 -16.007  -7.871  2.344
+    P90-95 Upper High  Trail_Close_d25      41 -12.587  -6.836 -3.865
+    P90-95 Upper High  Trail_Close_d50      40 -15.339  -8.440 -5.691
+    P90-95 Upper High Trail_Close_d100      40 -12.892 -10.120 -3.034
+    P90-95 Upper High    Trail_Low_d50      40 -16.374  -9.216 -6.955
+    P90-95 Upper High   Trail_Low_d100      40 -13.924 -10.811 -4.468
+    P90-95 Upper High      Trail_ret20      41 -16.378  -9.595 -5.357
+    P90-95 Upper High      Trail_ret60      40 -13.978  -8.409 -0.457
+       P95-99.5 Seven  Trail_Close_d25      37 -11.634  -4.401 -2.015
+       P95-99.5 Seven  Trail_Close_d50      36 -13.646  -6.304  0.619
+       P95-99.5 Seven Trail_Close_d100      35 -13.622  -5.485  7.634
+       P95-99.5 Seven    Trail_Low_d50      36 -15.725  -6.778 -0.257
+       P95-99.5 Seven   Trail_Low_d100      35 -15.738  -6.949  6.423
+       P95-99.5 Seven      Trail_ret20      37 -15.450  -7.420 -1.396
+       P95-99.5 Seven      Trail_ret60      35 -16.810  -7.905 13.737
+    P99.5-100 Everest  Trail_Close_d25       5 -18.090 -10.111 -4.235
+    P99.5-100 Everest  Trail_Close_d50       5 -21.188 -12.199 -0.745
+    P99.5-100 Everest Trail_Close_d100       5 -25.643 -12.828  1.124
+    P99.5-100 Everest    Trail_Low_d50       5 -25.898 -15.213 -2.807
+    P99.5-100 Everest   Trail_Low_d100       5 -29.640 -15.821 -0.977
+    P99.5-100 Everest      Trail_ret20       5 -23.417 -15.897 -6.504
+    P99.5-100 Everest      Trail_ret60       5 -29.849 -14.493 -0.251
+
+TRAILHEAD REGIME SHARES
+TrailheadRegime        Broad Expansion  Expansion Overheat  Fast Damage  Other/Transition  Risk-Off  Rollover Early  Thin-Rotation
+Band                                                                                                                              
+P00-50 Base                      0.032               0.007        0.073             0.107     0.661           0.029          0.090
+P50-75 Mid Mountain              0.044               0.015        0.112             0.107     0.587           0.039          0.097
+P75-90 Practical High            0.024               0.016        0.130             0.146     0.512           0.065          0.106
+P90-95 Upper High                0.024               0.000        0.098             0.073     0.659           0.049          0.098
+P95-99.5 Seven                   0.081               0.108        0.054             0.216     0.378           0.054          0.108
+P99.5-100 Everest                0.200               0.000        0.000             0.000     0.800           0.000          0.000
