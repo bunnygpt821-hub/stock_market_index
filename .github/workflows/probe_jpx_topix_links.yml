@@ -1,0 +1,23 @@
+name: Probe JPX TOPIX Links
+
+on:
+  push:
+    branches:
+      - analysis/paradise-lost
+    paths:
+      - 'analysis/probe_jpx_topix_links.py'
+      - '.github/workflows/probe_jpx_topix_links.yml'
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        run: python -m pip install requests beautifulsoup4
+      - name: Probe JPX
+        run: python analysis/probe_jpx_topix_links.py
