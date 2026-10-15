@@ -1,0 +1,169 @@
+Tier,Offset,Regime,N,TierOffsetN,Share
+Normal Top (<P75),-40,Broad Expansion,69,616,0.11201298701298701
+Normal Top (<P75),-40,Expansion Overheat,28,616,0.045454545454545456
+Normal Top (<P75),-40,Thin-Rotation,128,616,0.2077922077922078
+Normal Top (<P75),-40,Rollover Early,39,616,0.0633116883116883
+Normal Top (<P75),-40,Fast Damage,17,616,0.027597402597402596
+Normal Top (<P75),-40,Risk-Off,213,616,0.3457792207792208
+Normal Top (<P75),-40,Other/Transition,122,616,0.19805194805194806
+Normal Top (<P75),-20,Broad Expansion,54,616,0.08766233766233766
+Normal Top (<P75),-20,Expansion Overheat,25,616,0.040584415584415584
+Normal Top (<P75),-20,Thin-Rotation,114,616,0.18506493506493507
+Normal Top (<P75),-20,Rollover Early,45,616,0.07305194805194805
+Normal Top (<P75),-20,Fast Damage,31,616,0.05032467532467533
+Normal Top (<P75),-20,Risk-Off,233,616,0.3782467532467532
+Normal Top (<P75),-20,Other/Transition,114,616,0.18506493506493507
+Normal Top (<P75),-10,Broad Expansion,73,616,0.1185064935064935
+Normal Top (<P75),-10,Expansion Overheat,23,616,0.037337662337662336
+Normal Top (<P75),-10,Thin-Rotation,127,616,0.20616883116883117
+Normal Top (<P75),-10,Rollover Early,27,616,0.04383116883116883
+Normal Top (<P75),-10,Fast Damage,24,616,0.03896103896103896
+Normal Top (<P75),-10,Risk-Off,214,616,0.3474025974025974
+Normal Top (<P75),-10,Other/Transition,128,616,0.2077922077922078
+Normal Top (<P75),0,Broad Expansion,88,616,0.14285714285714285
+Normal Top (<P75),0,Expansion Overheat,41,616,0.06655844155844155
+Normal Top (<P75),0,Thin-Rotation,196,616,0.3181818181818182
+Normal Top (<P75),0,Rollover Early,28,616,0.045454545454545456
+Normal Top (<P75),0,Fast Damage,11,616,0.017857142857142856
+Normal Top (<P75),0,Risk-Off,106,616,0.17207792207792208
+Normal Top (<P75),0,Other/Transition,146,616,0.237012987012987
+Normal Top (<P75),10,Broad Expansion,61,616,0.09902597402597403
+Normal Top (<P75),10,Expansion Overheat,21,616,0.03409090909090909
+Normal Top (<P75),10,Thin-Rotation,136,616,0.22077922077922077
+Normal Top (<P75),10,Rollover Early,52,616,0.08441558441558442
+Normal Top (<P75),10,Fast Damage,33,616,0.05357142857142857
+Normal Top (<P75),10,Risk-Off,185,616,0.3003246753246753
+Normal Top (<P75),10,Other/Transition,128,616,0.2077922077922078
+Normal Top (<P75),20,Broad Expansion,43,616,0.0698051948051948
+Normal Top (<P75),20,Expansion Overheat,20,616,0.032467532467532464
+Normal Top (<P75),20,Thin-Rotation,101,616,0.16396103896103897
+Normal Top (<P75),20,Rollover Early,44,616,0.07142857142857142
+Normal Top (<P75),20,Fast Damage,43,616,0.0698051948051948
+Normal Top (<P75),20,Risk-Off,234,616,0.37987012987012986
+Normal Top (<P75),20,Other/Transition,131,616,0.21266233766233766
+High Mountain (P75-95),-40,Broad Expansion,44,164,0.2682926829268293
+High Mountain (P75-95),-40,Expansion Overheat,8,164,0.04878048780487805
+High Mountain (P75-95),-40,Thin-Rotation,26,164,0.15853658536585366
+High Mountain (P75-95),-40,Rollover Early,9,164,0.054878048780487805
+High Mountain (P75-95),-40,Fast Damage,5,164,0.03048780487804878
+High Mountain (P75-95),-40,Risk-Off,31,164,0.18902439024390244
+High Mountain (P75-95),-40,Other/Transition,41,164,0.25
+High Mountain (P75-95),-20,Broad Expansion,31,164,0.18902439024390244
+High Mountain (P75-95),-20,Expansion Overheat,20,164,0.12195121951219512
+High Mountain (P75-95),-20,Thin-Rotation,19,164,0.11585365853658537
+High Mountain (P75-95),-20,Rollover Early,15,164,0.09146341463414634
+High Mountain (P75-95),-20,Fast Damage,5,164,0.03048780487804878
+High Mountain (P75-95),-20,Risk-Off,33,164,0.20121951219512196
+High Mountain (P75-95),-20,Other/Transition,41,164,0.25
+High Mountain (P75-95),-10,Broad Expansion,36,164,0.21951219512195122
+High Mountain (P75-95),-10,Expansion Overheat,14,164,0.08536585365853659
+High Mountain (P75-95),-10,Thin-Rotation,23,164,0.1402439024390244
+High Mountain (P75-95),-10,Rollover Early,11,164,0.06707317073170732
+High Mountain (P75-95),-10,Fast Damage,5,164,0.03048780487804878
+High Mountain (P75-95),-10,Risk-Off,30,164,0.18292682926829268
+High Mountain (P75-95),-10,Other/Transition,45,164,0.27439024390243905
+High Mountain (P75-95),0,Broad Expansion,35,164,0.21341463414634146
+High Mountain (P75-95),0,Expansion Overheat,37,164,0.22560975609756098
+High Mountain (P75-95),0,Thin-Rotation,28,164,0.17073170731707318
+High Mountain (P75-95),0,Rollover Early,9,164,0.054878048780487805
+High Mountain (P75-95),0,Fast Damage,3,164,0.018292682926829267
+High Mountain (P75-95),0,Risk-Off,14,164,0.08536585365853659
+High Mountain (P75-95),0,Other/Transition,38,164,0.23170731707317074
+High Mountain (P75-95),10,Broad Expansion,15,164,0.09146341463414634
+High Mountain (P75-95),10,Expansion Overheat,20,164,0.12195121951219512
+High Mountain (P75-95),10,Thin-Rotation,24,164,0.14634146341463414
+High Mountain (P75-95),10,Rollover Early,16,164,0.0975609756097561
+High Mountain (P75-95),10,Fast Damage,17,164,0.10365853658536585
+High Mountain (P75-95),10,Risk-Off,29,164,0.17682926829268292
+High Mountain (P75-95),10,Other/Transition,43,164,0.2621951219512195
+High Mountain (P75-95),20,Broad Expansion,10,164,0.06097560975609756
+High Mountain (P75-95),20,Expansion Overheat,5,164,0.03048780487804878
+High Mountain (P75-95),20,Thin-Rotation,13,164,0.07926829268292683
+High Mountain (P75-95),20,Rollover Early,19,164,0.11585365853658537
+High Mountain (P75-95),20,Fast Damage,18,164,0.10975609756097561
+High Mountain (P75-95),20,Risk-Off,43,164,0.2621951219512195
+High Mountain (P75-95),20,Other/Transition,56,164,0.34146341463414637
+Seven Summits (P95-99.5),-40,Broad Expansion,12,37,0.32432432432432434
+Seven Summits (P95-99.5),-40,Expansion Overheat,1,37,0.02702702702702703
+Seven Summits (P95-99.5),-40,Thin-Rotation,6,37,0.16216216216216217
+Seven Summits (P95-99.5),-40,Rollover Early,2,37,0.05405405405405406
+Seven Summits (P95-99.5),-40,Fast Damage,0,37,0.0
+Seven Summits (P95-99.5),-40,Risk-Off,8,37,0.21621621621621623
+Seven Summits (P95-99.5),-40,Other/Transition,8,37,0.21621621621621623
+Seven Summits (P95-99.5),-20,Broad Expansion,11,37,0.2972972972972973
+Seven Summits (P95-99.5),-20,Expansion Overheat,6,37,0.16216216216216217
+Seven Summits (P95-99.5),-20,Thin-Rotation,2,37,0.05405405405405406
+Seven Summits (P95-99.5),-20,Rollover Early,1,37,0.02702702702702703
+Seven Summits (P95-99.5),-20,Fast Damage,0,37,0.0
+Seven Summits (P95-99.5),-20,Risk-Off,9,37,0.24324324324324326
+Seven Summits (P95-99.5),-20,Other/Transition,8,37,0.21621621621621623
+Seven Summits (P95-99.5),-10,Broad Expansion,8,37,0.21621621621621623
+Seven Summits (P95-99.5),-10,Expansion Overheat,4,37,0.10810810810810811
+Seven Summits (P95-99.5),-10,Thin-Rotation,5,37,0.13513513513513514
+Seven Summits (P95-99.5),-10,Rollover Early,6,37,0.16216216216216217
+Seven Summits (P95-99.5),-10,Fast Damage,0,37,0.0
+Seven Summits (P95-99.5),-10,Risk-Off,6,37,0.16216216216216217
+Seven Summits (P95-99.5),-10,Other/Transition,8,37,0.21621621621621623
+Seven Summits (P95-99.5),0,Broad Expansion,7,37,0.1891891891891892
+Seven Summits (P95-99.5),0,Expansion Overheat,9,37,0.24324324324324326
+Seven Summits (P95-99.5),0,Thin-Rotation,6,37,0.16216216216216217
+Seven Summits (P95-99.5),0,Rollover Early,2,37,0.05405405405405406
+Seven Summits (P95-99.5),0,Fast Damage,0,37,0.0
+Seven Summits (P95-99.5),0,Risk-Off,3,37,0.08108108108108109
+Seven Summits (P95-99.5),0,Other/Transition,10,37,0.2702702702702703
+Seven Summits (P95-99.5),10,Broad Expansion,4,37,0.10810810810810811
+Seven Summits (P95-99.5),10,Expansion Overheat,9,37,0.24324324324324326
+Seven Summits (P95-99.5),10,Thin-Rotation,5,37,0.13513513513513514
+Seven Summits (P95-99.5),10,Rollover Early,7,37,0.1891891891891892
+Seven Summits (P95-99.5),10,Fast Damage,2,37,0.05405405405405406
+Seven Summits (P95-99.5),10,Risk-Off,5,37,0.13513513513513514
+Seven Summits (P95-99.5),10,Other/Transition,5,37,0.13513513513513514
+Seven Summits (P95-99.5),20,Broad Expansion,3,37,0.08108108108108109
+Seven Summits (P95-99.5),20,Expansion Overheat,2,37,0.05405405405405406
+Seven Summits (P95-99.5),20,Thin-Rotation,3,37,0.08108108108108109
+Seven Summits (P95-99.5),20,Rollover Early,7,37,0.1891891891891892
+Seven Summits (P95-99.5),20,Fast Damage,4,37,0.10810810810810811
+Seven Summits (P95-99.5),20,Risk-Off,7,37,0.1891891891891892
+Seven Summits (P95-99.5),20,Other/Transition,11,37,0.2972972972972973
+Everest (>=P99.5),-40,Broad Expansion,0,5,0.0
+Everest (>=P99.5),-40,Expansion Overheat,0,5,0.0
+Everest (>=P99.5),-40,Thin-Rotation,0,5,0.0
+Everest (>=P99.5),-40,Rollover Early,0,5,0.0
+Everest (>=P99.5),-40,Fast Damage,2,5,0.4
+Everest (>=P99.5),-40,Risk-Off,1,5,0.2
+Everest (>=P99.5),-40,Other/Transition,2,5,0.4
+Everest (>=P99.5),-20,Broad Expansion,1,5,0.2
+Everest (>=P99.5),-20,Expansion Overheat,0,5,0.0
+Everest (>=P99.5),-20,Thin-Rotation,1,5,0.2
+Everest (>=P99.5),-20,Rollover Early,0,5,0.0
+Everest (>=P99.5),-20,Fast Damage,0,5,0.0
+Everest (>=P99.5),-20,Risk-Off,3,5,0.6
+Everest (>=P99.5),-20,Other/Transition,0,5,0.0
+Everest (>=P99.5),-10,Broad Expansion,1,5,0.2
+Everest (>=P99.5),-10,Expansion Overheat,0,5,0.0
+Everest (>=P99.5),-10,Thin-Rotation,1,5,0.2
+Everest (>=P99.5),-10,Rollover Early,0,5,0.0
+Everest (>=P99.5),-10,Fast Damage,0,5,0.0
+Everest (>=P99.5),-10,Risk-Off,3,5,0.6
+Everest (>=P99.5),-10,Other/Transition,0,5,0.0
+Everest (>=P99.5),0,Broad Expansion,0,5,0.0
+Everest (>=P99.5),0,Expansion Overheat,1,5,0.2
+Everest (>=P99.5),0,Thin-Rotation,2,5,0.4
+Everest (>=P99.5),0,Rollover Early,0,5,0.0
+Everest (>=P99.5),0,Fast Damage,0,5,0.0
+Everest (>=P99.5),0,Risk-Off,1,5,0.2
+Everest (>=P99.5),0,Other/Transition,1,5,0.2
+Everest (>=P99.5),10,Broad Expansion,0,5,0.0
+Everest (>=P99.5),10,Expansion Overheat,1,5,0.2
+Everest (>=P99.5),10,Thin-Rotation,0,5,0.0
+Everest (>=P99.5),10,Rollover Early,0,5,0.0
+Everest (>=P99.5),10,Fast Damage,0,5,0.0
+Everest (>=P99.5),10,Risk-Off,3,5,0.6
+Everest (>=P99.5),10,Other/Transition,1,5,0.2
+Everest (>=P99.5),20,Broad Expansion,0,5,0.0
+Everest (>=P99.5),20,Expansion Overheat,0,5,0.0
+Everest (>=P99.5),20,Thin-Rotation,0,5,0.0
+Everest (>=P99.5),20,Rollover Early,0,5,0.0
+Everest (>=P99.5),20,Fast Damage,0,5,0.0
+Everest (>=P99.5),20,Risk-Off,2,5,0.4
+Everest (>=P99.5),20,Other/Transition,3,5,0.6

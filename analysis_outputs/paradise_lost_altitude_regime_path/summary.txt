@@ -1,0 +1,200 @@
+PARADISE LOST — ALTITUDE REGIME PATH
+Offsets are trading sessions relative to True120 cycle-top PeakDate. Peak labeling is ex-post; regimes are point-in-time.
+
+Everest (>=P99.5)
+Family  FRAGILE  GROWTH  OTHER  THIN
+Offset                              
+-40         0.6     0.0    0.4   0.0
+-20         0.6     0.2    0.0   0.2
+-10         0.6     0.2    0.0   0.2
+ 0          0.2     0.2    0.2   0.4
+ 10         0.6     0.2    0.2   0.0
+ 20         0.4     0.0    0.6   0.0
+REGIME COUNTS/SHARES
+Regime  Broad Expansion  Expansion Overheat  Fast Damage  Other/Transition  Risk-Off  Rollover Early  Thin-Rotation
+Offset                                                                                                             
+-40                 0.0                 0.0          0.4               0.4       0.2             0.0            0.0
+-20                 0.2                 0.0          0.0               0.0       0.6             0.0            0.2
+-10                 0.2                 0.0          0.0               0.0       0.6             0.0            0.2
+ 0                  0.0                 0.2          0.0               0.2       0.2             0.0            0.4
+ 10                 0.0                 0.2          0.0               0.2       0.6             0.0            0.0
+ 20                 0.0                 0.0          0.0               0.6       0.4             0.0            0.0
+
+Seven Summits (P95-99.5)
+Family  FRAGILE  GROWTH  OTHER   THIN
+Offset                               
+-40       0.270   0.351  0.216  0.162
+-20       0.270   0.459  0.216  0.054
+-10       0.324   0.324  0.216  0.135
+ 0        0.135   0.432  0.270  0.162
+ 10       0.378   0.351  0.135  0.135
+ 20       0.486   0.135  0.297  0.081
+REGIME COUNTS/SHARES
+Regime  Broad Expansion  Expansion Overheat  Fast Damage  Other/Transition  Risk-Off  Rollover Early  Thin-Rotation
+Offset                                                                                                             
+-40               0.324               0.027        0.000             0.216     0.216           0.054          0.162
+-20               0.297               0.162        0.000             0.216     0.243           0.027          0.054
+-10               0.216               0.108        0.000             0.216     0.162           0.162          0.135
+ 0                0.189               0.243        0.000             0.270     0.081           0.054          0.162
+ 10               0.108               0.243        0.054             0.135     0.135           0.189          0.135
+ 20               0.081               0.054        0.108             0.297     0.189           0.189          0.081
+
+High Mountain (P75-95)
+Family  FRAGILE  GROWTH  OTHER   THIN
+Offset                               
+-40       0.274   0.317  0.250  0.159
+-20       0.323   0.311  0.250  0.116
+-10       0.280   0.305  0.274  0.140
+ 0        0.159   0.439  0.232  0.171
+ 10       0.378   0.213  0.262  0.146
+ 20       0.488   0.091  0.341  0.079
+REGIME COUNTS/SHARES
+Regime  Broad Expansion  Expansion Overheat  Fast Damage  Other/Transition  Risk-Off  Rollover Early  Thin-Rotation
+Offset                                                                                                             
+-40               0.268               0.049        0.030             0.250     0.189           0.055          0.159
+-20               0.189               0.122        0.030             0.250     0.201           0.091          0.116
+-10               0.220               0.085        0.030             0.274     0.183           0.067          0.140
+ 0                0.213               0.226        0.018             0.232     0.085           0.055          0.171
+ 10               0.091               0.122        0.104             0.262     0.177           0.098          0.146
+ 20               0.061               0.030        0.110             0.341     0.262           0.116          0.079
+
+Normal Top (<P75)
+Family  FRAGILE  GROWTH  OTHER   THIN
+Offset                               
+-40       0.437   0.157  0.198  0.208
+-20       0.502   0.128  0.185  0.185
+-10       0.430   0.156  0.208  0.206
+ 0        0.235   0.209  0.237  0.318
+ 10       0.438   0.133  0.208  0.221
+ 20       0.521   0.102  0.213  0.164
+REGIME COUNTS/SHARES
+Regime  Broad Expansion  Expansion Overheat  Fast Damage  Other/Transition  Risk-Off  Rollover Early  Thin-Rotation
+Offset                                                                                                             
+-40               0.112               0.045        0.028             0.198     0.346           0.063          0.208
+-20               0.088               0.041        0.050             0.185     0.378           0.073          0.185
+-10               0.119               0.037        0.039             0.208     0.347           0.044          0.206
+ 0                0.143               0.067        0.018             0.237     0.172           0.045          0.318
+ 10               0.099               0.034        0.054             0.208     0.300           0.084          0.221
+ 20               0.070               0.032        0.070             0.213     0.380           0.071          0.164
+
+EXTREME EVENT PATHS
+Ticker   PeakDate                     Tier  CompositePctRank                -40                -20                -10                  0                 10                 20
+7974.T 2016-07-19        Everest (>=P99.5)          1.000000   Other/Transition           Risk-Off           Risk-Off      Thin-Rotation           Risk-Off           Risk-Off
+4902.T 2024-11-08        Everest (>=P99.5)          0.998783           Risk-Off           Risk-Off           Risk-Off      Thin-Rotation   Other/Transition   Other/Transition
+2432.T 2025-02-25        Everest (>=P99.5)          0.997567        Fast Damage      Thin-Rotation      Thin-Rotation   Other/Transition           Risk-Off   Other/Transition
+8604.T 2016-12-12        Everest (>=P99.5)          0.996350   Other/Transition    Broad Expansion    Broad Expansion Expansion Overheat Expansion Overheat   Other/Transition
+3697.T 2018-04-04        Everest (>=P99.5)          0.995134        Fast Damage           Risk-Off           Risk-Off           Risk-Off           Risk-Off           Risk-Off
+4506.T 2018-12-06 Seven Summits (P95-99.5)          0.993917      Thin-Rotation           Risk-Off           Risk-Off           Risk-Off           Risk-Off           Risk-Off
+6753.T 2021-02-15 Seven Summits (P95-99.5)          0.991484    Broad Expansion    Broad Expansion     Rollover Early Expansion Overheat   Other/Transition    Broad Expansion
+7013.T 2026-02-10 Seven Summits (P95-99.5)          0.991484    Broad Expansion Expansion Overheat   Other/Transition Expansion Overheat Expansion Overheat        Fast Damage
+9501.T 2022-07-05 Seven Summits (P95-99.5)          0.991484           Risk-Off      Thin-Rotation           Risk-Off           Risk-Off      Thin-Rotation      Thin-Rotation
+2432.T 2016-09-08 Seven Summits (P95-99.5)          0.989051           Risk-Off           Risk-Off           Risk-Off      Thin-Rotation   Other/Transition    Broad Expansion
+5801.T 2025-01-23 Seven Summits (P95-99.5)          0.987226           Risk-Off   Other/Transition      Thin-Rotation      Thin-Rotation      Thin-Rotation   Other/Transition
+7735.T 2024-03-07 Seven Summits (P95-99.5)          0.987226   Other/Transition   Other/Transition    Broad Expansion Expansion Overheat Expansion Overheat   Other/Transition
+8002.T 2026-02-12 Seven Summits (P95-99.5)          0.985401   Other/Transition Expansion Overheat     Rollover Early Expansion Overheat Expansion Overheat        Fast Damage
+6723.T 2023-07-05 Seven Summits (P95-99.5)          0.984185    Broad Expansion    Broad Expansion Expansion Overheat Expansion Overheat     Rollover Early     Rollover Early
+8267.T 2025-11-25 Seven Summits (P95-99.5)          0.982968    Broad Expansion    Broad Expansion   Other/Transition   Other/Transition    Broad Expansion    Broad Expansion
+6976.T 2021-01-29 Seven Summits (P95-99.5)          0.981752    Broad Expansion    Broad Expansion    Broad Expansion     Rollover Early Expansion Overheat   Other/Transition
+7012.T 2026-03-03 Seven Summits (P95-99.5)          0.980535    Broad Expansion   Other/Transition Expansion Overheat   Other/Transition        Fast Damage     Rollover Early
+4523.T 2018-07-25 Seven Summits (P95-99.5)          0.979319           Risk-Off           Risk-Off           Risk-Off      Thin-Rotation           Risk-Off           Risk-Off
+6857.T 2024-02-16 Seven Summits (P95-99.5)          0.978102   Other/Transition   Other/Transition    Broad Expansion   Other/Transition Expansion Overheat Expansion Overheat
+6326.T 2026-02-13 Seven Summits (P95-99.5)          0.976886    Broad Expansion Expansion Overheat     Rollover Early Expansion Overheat Expansion Overheat        Fast Damage
+6920.T 2022-11-16 Seven Summits (P95-99.5)          0.975669     Rollover Early           Risk-Off      Thin-Rotation      Thin-Rotation      Thin-Rotation      Thin-Rotation
+3697.T 2025-06-03 Seven Summits (P95-99.5)          0.974453           Risk-Off           Risk-Off      Thin-Rotation      Thin-Rotation      Thin-Rotation   Other/Transition
+6506.T 2018-01-18 Seven Summits (P95-99.5)          0.973236     Rollover Early   Other/Transition   Other/Transition   Other/Transition     Rollover Early           Risk-Off
+2413.T 2021-01-08 Seven Summits (P95-99.5)          0.972019      Thin-Rotation    Broad Expansion     Rollover Early    Broad Expansion    Broad Expansion Expansion Overheat
+5019.T 2017-12-27 Seven Summits (P95-99.5)          0.970803    Broad Expansion     Rollover Early   Other/Transition    Broad Expansion    Broad Expansion     Rollover Early
+4004.T 2018-01-15 Seven Summits (P95-99.5)          0.969586   Other/Transition   Other/Transition   Other/Transition    Broad Expansion   Other/Transition           Risk-Off
+4385.T 2019-03-28 Seven Summits (P95-99.5)          0.968370           Risk-Off      Thin-Rotation   Other/Transition   Other/Transition      Thin-Rotation   Other/Transition
+8002.T 2023-06-23 Seven Summits (P95-99.5)          0.967153   Other/Transition    Broad Expansion    Broad Expansion    Broad Expansion     Rollover Early   Other/Transition
+8035.T 2017-11-09 Seven Summits (P95-99.5)          0.965937      Thin-Rotation    Broad Expansion    Broad Expansion    Broad Expansion     Rollover Early   Other/Transition
+7735.T 2017-11-09 Seven Summits (P95-99.5)          0.964720      Thin-Rotation    Broad Expansion    Broad Expansion    Broad Expansion     Rollover Early   Other/Transition
+3697.T 2016-07-08 Seven Summits (P95-99.5)          0.963504   Other/Transition           Risk-Off           Risk-Off           Risk-Off           Risk-Off      Thin-Rotation
+2768.T 2026-03-03 Seven Summits (P95-99.5)          0.961679    Broad Expansion   Other/Transition Expansion Overheat   Other/Transition        Fast Damage     Rollover Early
+9107.T 2019-12-10 Seven Summits (P95-99.5)          0.961679      Thin-Rotation    Broad Expansion   Other/Transition   Other/Transition   Other/Transition   Other/Transition
+4755.T 2021-03-15 Seven Summits (P95-99.5)          0.959854 Expansion Overheat Expansion Overheat   Other/Transition    Broad Expansion    Broad Expansion     Rollover Early
+4506.T 2026-02-17 Seven Summits (P95-99.5)          0.958637    Broad Expansion Expansion Overheat     Rollover Early Expansion Overheat     Rollover Early     Rollover Early
+6301.T 2026-02-13 Seven Summits (P95-99.5)          0.957421    Broad Expansion Expansion Overheat     Rollover Early Expansion Overheat Expansion Overheat        Fast Damage
+9501.T 2021-01-29 Seven Summits (P95-99.5)          0.956204    Broad Expansion    Broad Expansion    Broad Expansion     Rollover Early Expansion Overheat   Other/Transition
+6361.T 2024-04-12 Seven Summits (P95-99.5)          0.954988   Other/Transition   Other/Transition Expansion Overheat   Other/Transition     Rollover Early     Rollover Early
+4911.T 2018-06-07 Seven Summits (P95-99.5)          0.953771           Risk-Off           Risk-Off           Risk-Off      Thin-Rotation           Risk-Off           Risk-Off
+6506.T 2019-04-22 Seven Summits (P95-99.5)          0.952555      Thin-Rotation           Risk-Off      Thin-Rotation   Other/Transition           Risk-Off           Risk-Off
+8766.T 2016-12-12 Seven Summits (P95-99.5)          0.951338   Other/Transition    Broad Expansion    Broad Expansion Expansion Overheat Expansion Overheat   Other/Transition
+5301.T 2018-06-04 Seven Summits (P95-99.5)          0.950122           Risk-Off           Risk-Off      Thin-Rotation   Other/Transition   Other/Transition           Risk-Off
+
+TOP TRANSITIONS FOR EXTREMES
+                    Tier  FromOffset  ToOffset                               Transition  N  PairN  Share
+       Everest (>=P99.5)         -40       -20             Fast Damage -> Thin-Rotation  1      5  0.200
+       Everest (>=P99.5)         -40       -20                  Fast Damage -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)         -40       -20                     Risk-Off -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)         -40       -20             Other/Transition -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)         -40       -20      Other/Transition -> Broad Expansion  1      5  0.200
+       Everest (>=P99.5)         -20       -10                     Risk-Off -> Risk-Off  3      5  0.600
+       Everest (>=P99.5)         -20       -10           Thin-Rotation -> Thin-Rotation  1      5  0.200
+       Everest (>=P99.5)         -20       -10       Broad Expansion -> Broad Expansion  1      5  0.200
+       Everest (>=P99.5)         -20         0                Risk-Off -> Thin-Rotation  2      5  0.400
+       Everest (>=P99.5)         -20         0        Thin-Rotation -> Other/Transition  1      5  0.200
+       Everest (>=P99.5)         -20         0                     Risk-Off -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)         -20         0    Broad Expansion -> Expansion Overheat  1      5  0.200
+       Everest (>=P99.5)         -10         0                Risk-Off -> Thin-Rotation  2      5  0.400
+       Everest (>=P99.5)         -10         0        Thin-Rotation -> Other/Transition  1      5  0.200
+       Everest (>=P99.5)         -10         0                     Risk-Off -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)         -10         0    Broad Expansion -> Expansion Overheat  1      5  0.200
+       Everest (>=P99.5)           0        10             Other/Transition -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)           0        10                     Risk-Off -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)           0        10        Thin-Rotation -> Other/Transition  1      5  0.200
+       Everest (>=P99.5)           0        10                Thin-Rotation -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)           0        10 Expansion Overheat -> Expansion Overheat  1      5  0.200
+       Everest (>=P99.5)           0        20     Other/Transition -> Other/Transition  1      5  0.200
+       Everest (>=P99.5)           0        20                     Risk-Off -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)           0        20        Thin-Rotation -> Other/Transition  1      5  0.200
+       Everest (>=P99.5)           0        20                Thin-Rotation -> Risk-Off  1      5  0.200
+       Everest (>=P99.5)           0        20   Expansion Overheat -> Other/Transition  1      5  0.200
+Seven Summits (P95-99.5)         -40       -20                     Risk-Off -> Risk-Off  5     37  0.135
+Seven Summits (P95-99.5)         -40       -20       Broad Expansion -> Broad Expansion  5     37  0.135
+Seven Summits (P95-99.5)         -40       -20         Thin-Rotation -> Broad Expansion  4     37  0.108
+Seven Summits (P95-99.5)         -40       -20     Other/Transition -> Other/Transition  4     37  0.108
+Seven Summits (P95-99.5)         -40       -20    Broad Expansion -> Expansion Overheat  4     37  0.108
+Seven Summits (P95-99.5)         -40       -20      Broad Expansion -> Other/Transition  2     37  0.054
+Seven Summits (P95-99.5)         -40       -20                Risk-Off -> Thin-Rotation  2     37  0.054
+Seven Summits (P95-99.5)         -40       -20                Thin-Rotation -> Risk-Off  2     37  0.054
+Seven Summits (P95-99.5)         -20       -10       Broad Expansion -> Broad Expansion  6     37  0.162
+Seven Summits (P95-99.5)         -20       -10                     Risk-Off -> Risk-Off  5     37  0.135
+Seven Summits (P95-99.5)         -20       -10                Risk-Off -> Thin-Rotation  4     37  0.108
+Seven Summits (P95-99.5)         -20       -10     Expansion Overheat -> Rollover Early  4     37  0.108
+Seven Summits (P95-99.5)         -20       -10   Other/Transition -> Expansion Overheat  3     37  0.081
+Seven Summits (P95-99.5)         -20       -10        Broad Expansion -> Rollover Early  2     37  0.054
+Seven Summits (P95-99.5)         -20       -10     Other/Transition -> Other/Transition  2     37  0.054
+Seven Summits (P95-99.5)         -20       -10   Expansion Overheat -> Other/Transition  2     37  0.054
+Seven Summits (P95-99.5)         -20         0                Risk-Off -> Thin-Rotation  5     37  0.135
+Seven Summits (P95-99.5)         -20         0     Other/Transition -> Other/Transition  5     37  0.135
+Seven Summits (P95-99.5)         -20         0 Expansion Overheat -> Expansion Overheat  5     37  0.135
+Seven Summits (P95-99.5)         -20         0       Broad Expansion -> Broad Expansion  4     37  0.108
+Seven Summits (P95-99.5)         -20         0    Broad Expansion -> Expansion Overheat  3     37  0.081
+Seven Summits (P95-99.5)         -20         0                     Risk-Off -> Risk-Off  2     37  0.054
+Seven Summits (P95-99.5)         -20         0             Risk-Off -> Other/Transition  2     37  0.054
+Seven Summits (P95-99.5)         -20         0        Broad Expansion -> Rollover Early  2     37  0.054
+Seven Summits (P95-99.5)         -10         0     Rollover Early -> Expansion Overheat  5     37  0.135
+Seven Summits (P95-99.5)         -10         0     Other/Transition -> Other/Transition  4     37  0.108
+Seven Summits (P95-99.5)         -10         0                Risk-Off -> Thin-Rotation  3     37  0.081
+Seven Summits (P95-99.5)         -10         0   Expansion Overheat -> Other/Transition  3     37  0.081
+Seven Summits (P95-99.5)         -10         0                     Risk-Off -> Risk-Off  3     37  0.081
+Seven Summits (P95-99.5)         -10         0           Thin-Rotation -> Thin-Rotation  3     37  0.081
+Seven Summits (P95-99.5)         -10         0      Other/Transition -> Broad Expansion  3     37  0.081
+Seven Summits (P95-99.5)         -10         0       Broad Expansion -> Broad Expansion  3     37  0.081
+Seven Summits (P95-99.5)           0        10 Expansion Overheat -> Expansion Overheat  6     37  0.162
+Seven Summits (P95-99.5)           0        10       Broad Expansion -> Broad Expansion  3     37  0.081
+Seven Summits (P95-99.5)           0        10           Thin-Rotation -> Thin-Rotation  3     37  0.081
+Seven Summits (P95-99.5)           0        10        Broad Expansion -> Rollover Early  3     37  0.081
+Seven Summits (P95-99.5)           0        10          Other/Transition -> Fast Damage  2     37  0.054
+Seven Summits (P95-99.5)           0        10                     Risk-Off -> Risk-Off  2     37  0.054
+Seven Summits (P95-99.5)           0        10     Expansion Overheat -> Rollover Early  2     37  0.054
+Seven Summits (P95-99.5)           0        10                Thin-Rotation -> Risk-Off  2     37  0.054
+Seven Summits (P95-99.5)           0        20        Expansion Overheat -> Fast Damage  4     37  0.108
+Seven Summits (P95-99.5)           0        20       Other/Transition -> Rollover Early  3     37  0.081
+Seven Summits (P95-99.5)           0        20             Other/Transition -> Risk-Off  3     37  0.081
+Seven Summits (P95-99.5)           0        20      Broad Expansion -> Other/Transition  3     37  0.081
+Seven Summits (P95-99.5)           0        20                Risk-Off -> Thin-Rotation  2     37  0.054
+Seven Summits (P95-99.5)           0        20        Thin-Rotation -> Other/Transition  2     37  0.054
+Seven Summits (P95-99.5)           0        20     Other/Transition -> Other/Transition  2     37  0.054
+Seven Summits (P95-99.5)           0        20     Expansion Overheat -> Rollover Early  2     37  0.054
