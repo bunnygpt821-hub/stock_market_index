@@ -1,0 +1,62 @@
+PARADISE LOST — RETEST FAILURE ROBUSTNESS RANK
+Rank criterion = maximum worst-period PF across 2016-20 / 2021-23 / 2024-26.
+Do not select by test-period maximum.
+
+TOP 25, MinN>=20
+ Hold    Pattern    NeckType           Trigger       IndexRule  PF_train  PF_valid  PF_test  N_train  N_valid  N_test  MeanR_train  MeanR_valid  MeanR_test  MinPF  MedianPF  MeanPF  MinN  AllPFgt1  AllPFgt09  RobustScore
+   10 DOUBLE_1_3     HS_LINE        NECK_BREAK   IDX_BEARSTACK     1.541     1.082    1.013       74       84      39        0.352        0.058       0.009  1.013     1.082   1.212    39      True       True        1.013
+   10 DOUBLE_3_5     HS_LINE TOUCH_FAIL_025ATR             ANY     1.040     1.224    0.973       51       27      54        0.022        0.127      -0.016  0.973     1.040   1.079    27     False       True        0.973
+   10 DOUBLE_1_3 DOUBLE_NECK  TOUCH_FAIL_05ATR             ANY     0.954     0.933    0.942      392      312     253       -0.030       -0.043      -0.038  0.933     0.942   0.943   253     False       True        0.933
+   10 DOUBLE_1_3 DOUBLE_NECK TOUCH_FAIL_025ATR             ANY     0.932     0.959    0.975      342      278     224       -0.045       -0.026      -0.017  0.932     0.959   0.955   224     False       True        0.932
+   10 DOUBLE_1_3 DOUBLE_NECK        NECK_BREAK   IDX_BEARSTACK     1.292     0.914    1.479       86      101      43        0.196       -0.060       0.323  0.914     1.292   1.228    43     False       True        0.914
+   20 DOUBLE_3_5     HS_LINE   NEAR_CLOSE_FAIL             ANY     0.901     1.697    0.894       46       31      43       -0.073        0.410      -0.077  0.894     0.901   1.164    31     False      False        0.894
+   10 DOUBLE_1_3     HS_LINE   NEAR_CLOSE_FAIL             ANY     1.009     0.863    0.888      238      191     175        0.006       -0.088      -0.075  0.863     0.888   0.920   175     False      False        0.863
+   10 DOUBLE_3_5     HS_LINE  TOUCH_FAIL_05ATR             ANY     1.033     0.852    1.159       64       37      62        0.019       -0.087       0.091  0.852     1.033   1.015    37     False      False        0.852
+   10 DOUBLE_1_3     HS_LINE        NECK_BREAK      IDX25_WEAK     0.869     0.851    0.926      240      254     143       -0.093       -0.101      -0.049  0.851     0.869   0.882   143     False      False        0.851
+   10 DOUBLE_1_3 DOUBLE_NECK  TOUCH_FAIL_10ATR             ANY     0.847     0.878    0.920      434      353     285       -0.104       -0.079      -0.052  0.847     0.878   0.882   285     False      False        0.847
+   10 DOUBLE_0_3 DOUBLE_NECK        NECK_BREAK   IDX_BEARSTACK     1.364     0.847    0.939      182      198     109        0.234       -0.108      -0.044  0.847     0.939   1.050   109     False      False        0.847
+   10 DOUBLE_0_3     HS_LINE        NECK_BREAK      IDX25_WEAK     1.053     0.823    0.979      480      517     272        0.036       -0.119      -0.014  0.823     0.979   0.952   272     False      False        0.823
+   10 DOUBLE_1_3     HS_LINE  TOUCH_FAIL_10ATR IDX25_WEAK_DOWN     1.003     0.814    0.848       78      102      52        0.002       -0.121      -0.102  0.814     0.848   0.888    52     False      False        0.814
+   10 DOUBLE_0_3     HS_LINE  TOUCH_FAIL_10ATR      IDX25_WEAK     1.091     0.811    0.830      287      341     174        0.061       -0.126      -0.121  0.811     0.830   0.911   174     False      False        0.811
+   10 DOUBLE_3_5     HS_LINE      RECLAIM_FAIL             ANY     0.806     1.260    1.300       41       20      42       -0.128        0.154       0.167  0.806     1.260   1.122    20     False      False        0.806
+   10 DOUBLE_1_3     HS_LINE  TOUCH_FAIL_10ATR      IDX25_WEAK     0.995     0.998    0.800      142      173      94       -0.003       -0.001      -0.137  0.800     0.995   0.931    94     False      False        0.800
+   10 DOUBLE_0_1     HS_LINE        NECK_BREAK      IDX25_WEAK     1.254     0.796    1.039      240      263     129        0.164       -0.136       0.026  0.796     1.039   1.030   129     False      False        0.796
+   10 DOUBLE_0_1 DOUBLE_NECK        NECK_BREAK IDX25_WEAK_DOWN     1.057     0.792    0.787      120      152      78        0.041       -0.147      -0.146  0.787     0.792   0.879    78     False      False        0.787
+   20 DOUBLE_3_5     HS_LINE  TOUCH_FAIL_10ATR             ANY     0.775     0.826    1.049       81       47      77       -0.164       -0.126       0.034  0.775     0.826   0.883    47     False      False        0.775
+   10 DOUBLE_0_1     HS_LINE      RECLAIM_FAIL      IDX25_WEAK     0.860     0.773    1.121       63       72      38       -0.104       -0.158       0.082  0.773     0.860   0.918    38     False      False        0.773
+   10 DOUBLE_0_3 DOUBLE_NECK  TOUCH_FAIL_05ATR   IDX_BEARSTACK     0.801     0.772    0.785      115      116      89       -0.147       -0.159      -0.149  0.772     0.785   0.786    89     False      False        0.772
+   10 DOUBLE_0_1     HS_LINE      RECLAIM_FAIL IDX25_WEAK_DOWN     0.853     0.770    1.731       25       49      23       -0.105       -0.157       0.477  0.770     0.853   1.118    23     False      False        0.770
+   10 DOUBLE_0_1 DOUBLE_NECK        NECK_BREAK      IDX25_WEAK     1.108     0.765    1.105      289      265     128        0.076       -0.168       0.071  0.765     1.105   0.992   128     False      False        0.765
+   10 DOUBLE_0_3 DOUBLE_NECK        NECK_BREAK IDX25_WEAK_DOWN     1.080     0.764    1.054      239      301     152        0.056       -0.168       0.036  0.764     1.054   0.966   152     False      False        0.764
+   10 DOUBLE_0_3     HS_LINE      RECLAIM_FAIL      IDX25_WEAK     1.027     0.831    0.758      134      147      85        0.019       -0.112      -0.173  0.758     0.831   0.872    85     False      False        0.758
+
+TOP 25, MinN>=50
+ Hold    Pattern    NeckType           Trigger       IndexRule  PF_train  PF_valid  PF_test  N_train  N_valid  N_test  MeanR_train  MeanR_valid  MeanR_test  MinPF  MedianPF  MeanPF  MinN  AllPFgt1  AllPFgt09  RobustScore
+   10 DOUBLE_1_3 DOUBLE_NECK  TOUCH_FAIL_05ATR             ANY     0.954     0.933    0.942      392      312     253       -0.030       -0.043      -0.038  0.933     0.942   0.943   253     False       True        0.933
+   10 DOUBLE_1_3 DOUBLE_NECK TOUCH_FAIL_025ATR             ANY     0.932     0.959    0.975      342      278     224       -0.045       -0.026      -0.017  0.932     0.959   0.955   224     False       True        0.932
+   10 DOUBLE_1_3     HS_LINE   NEAR_CLOSE_FAIL             ANY     1.009     0.863    0.888      238      191     175        0.006       -0.088      -0.075  0.863     0.888   0.920   175     False      False        0.863
+   10 DOUBLE_1_3     HS_LINE        NECK_BREAK      IDX25_WEAK     0.869     0.851    0.926      240      254     143       -0.093       -0.101      -0.049  0.851     0.869   0.882   143     False      False        0.851
+   10 DOUBLE_1_3 DOUBLE_NECK  TOUCH_FAIL_10ATR             ANY     0.847     0.878    0.920      434      353     285       -0.104       -0.079      -0.052  0.847     0.878   0.882   285     False      False        0.847
+   10 DOUBLE_0_3 DOUBLE_NECK        NECK_BREAK   IDX_BEARSTACK     1.364     0.847    0.939      182      198     109        0.234       -0.108      -0.044  0.847     0.939   1.050   109     False      False        0.847
+   10 DOUBLE_0_3     HS_LINE        NECK_BREAK      IDX25_WEAK     1.053     0.823    0.979      480      517     272        0.036       -0.119      -0.014  0.823     0.979   0.952   272     False      False        0.823
+   10 DOUBLE_1_3     HS_LINE  TOUCH_FAIL_10ATR IDX25_WEAK_DOWN     1.003     0.814    0.848       78      102      52        0.002       -0.121      -0.102  0.814     0.848   0.888    52     False      False        0.814
+   10 DOUBLE_0_3     HS_LINE  TOUCH_FAIL_10ATR      IDX25_WEAK     1.091     0.811    0.830      287      341     174        0.061       -0.126      -0.121  0.811     0.830   0.911   174     False      False        0.811
+   10 DOUBLE_1_3     HS_LINE  TOUCH_FAIL_10ATR      IDX25_WEAK     0.995     0.998    0.800      142      173      94       -0.003       -0.001      -0.137  0.800     0.995   0.931    94     False      False        0.800
+   10 DOUBLE_0_1     HS_LINE        NECK_BREAK      IDX25_WEAK     1.254     0.796    1.039      240      263     129        0.164       -0.136       0.026  0.796     1.039   1.030   129     False      False        0.796
+   10 DOUBLE_0_1 DOUBLE_NECK        NECK_BREAK IDX25_WEAK_DOWN     1.057     0.792    0.787      120      152      78        0.041       -0.147      -0.146  0.787     0.792   0.879    78     False      False        0.787
+   10 DOUBLE_0_3 DOUBLE_NECK  TOUCH_FAIL_05ATR   IDX_BEARSTACK     0.801     0.772    0.785      115      116      89       -0.147       -0.159      -0.149  0.772     0.785   0.786    89     False      False        0.772
+   10 DOUBLE_0_1 DOUBLE_NECK        NECK_BREAK      IDX25_WEAK     1.108     0.765    1.105      289      265     128        0.076       -0.168       0.071  0.765     1.105   0.992   128     False      False        0.765
+   10 DOUBLE_0_3 DOUBLE_NECK        NECK_BREAK IDX25_WEAK_DOWN     1.080     0.764    1.054      239      301     152        0.056       -0.168       0.036  0.764     1.054   0.966   152     False      False        0.764
+   10 DOUBLE_0_3     HS_LINE      RECLAIM_FAIL      IDX25_WEAK     1.027     0.831    0.758      134      147      85        0.019       -0.112      -0.173  0.758     0.831   0.872    85     False      False        0.758
+   10 DOUBLE_0_3     HS_LINE   NEAR_CLOSE_FAIL             ANY     1.126     0.831    0.757      518      391     331        0.082       -0.109      -0.170  0.757     0.831   0.905   331     False      False        0.757
+   10 DOUBLE_0_3 DOUBLE_NECK  TOUCH_FAIL_10ATR             ANY     0.976     0.817    0.756      906      683     559       -0.016       -0.121      -0.167  0.756     0.817   0.849   559     False      False        0.756
+   10 DOUBLE_1_3 DOUBLE_NECK TOUCH_FAIL_025ATR      IDX25_WEAK     0.754     0.838    1.340      154      181      85       -0.184       -0.107       0.215  0.754     0.838   0.977    85     False      False        0.754
+   10 DOUBLE_0_3 DOUBLE_NECK        NECK_BREAK      IDX25_WEAK     0.995     0.748    1.193      559      535     260       -0.004       -0.179       0.124  0.748     0.995   0.979   260     False      False        0.748
+   20 DOUBLE_3_5 DOUBLE_NECK        NECK_BREAK             ANY     0.879     0.776    0.748       94       76     109       -0.090       -0.171      -0.183  0.748     0.776   0.801    76     False      False        0.748
+   10 DOUBLE_3_5 DOUBLE_NECK        NECK_BREAK             ANY     0.882     0.742    0.792       94       76     109       -0.076       -0.174      -0.132  0.742     0.792   0.806    76     False      False        0.742
+   10 DOUBLE_1_3 DOUBLE_NECK        NECK_BREAK IDX25_WEAK_DOWN     1.105     0.737    1.356      119      149      74        0.071       -0.190       0.226  0.737     1.105   1.066    74     False      False        0.737
+   10 DOUBLE_0_3 DOUBLE_NECK TOUCH_FAIL_025ATR             ANY     1.016     0.850    0.734      723      545     443        0.011       -0.098      -0.185  0.734     0.850   0.866   443     False      False        0.734
+   10 DOUBLE_1_3 DOUBLE_NECK  TOUCH_FAIL_05ATR      IDX25_WEAK     0.733     0.871    1.434      180      202     102       -0.199       -0.086       0.261  0.733     0.871   1.013   102     False      False        0.733
+
+All three PF>1, MinN>=20: 1
+All three PF>0.9, MinN>=20: 5
